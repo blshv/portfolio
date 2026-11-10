@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en" class="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Andrey Balashov — Product Designer, open to new roles</title>
+<meta name="description" content="I design digital products and love the tricky parts. Digging into details, testing ideas with real data, turning messy flows into something people actually enjoy using.">
+<meta property="og:title" content="Product Designer — open to new roles">
+<meta property="og:description" content="I design digital products and love the tricky parts. Digging into details, testing ideas with real data, turning messy flows into something people actually enjoy using.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andreybalashov.xyz/">
+<link rel="canonical" href="https://andreybalashov.xyz/">
+<link rel="alternate" hreflang="en" href="https://andreybalashov.xyz/">
+<link rel="alternate" hreflang="ru" href="https://andreybalashov.xyz/ru/">
+<link rel="alternate" hreflang="x-default" href="https://andreybalashov.xyz/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Andrey Balashov">
+<meta property="og:image" content="https://andreybalashov.xyz/og-avatar.jpg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Product Designer — open to new roles">
+<meta name="twitter:description" content="I design digital products and love the tricky parts. Digging into details, testing ideas with real data, turning messy flows into something people actually enjoy using.">
+<meta name="twitter:image" content="https://andreybalashov.xyz/og-avatar.jpg">
+<meta name="theme-color" content="#4AAED2">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&amp;family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&amp;family=Public+Sans:wght@400;600&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F8F9FC}
+a{color:#000}a:hover{color:#333}
+/* footer: liquid glass — edge refraction (SVG displacement, Chromium), light frost + saturation, specular rim */
+.lg{position:relative;isolation:isolate;box-shadow:0 10px 30px rgba(0,0,0,.14),0 2px 6px rgba(0,0,0,.08)}
+.lg a.ft-btn,.dock-scroll>span:not([class]){position:relative;z-index:3}
+/* desktop dock behaves like the macOS Dock: plain arrow cursor; below 1120 the icons open sheets, so they keep the pointer */
+@media (min-width:1120px){.dock a.ft-btn[href="#"],.dock a.ft-btn[href="#"] *{cursor:default!important}}
+.dock-scroll{display:contents}
+.lg-warp,.lg-frost,.lg-rim{position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.lg-warp{z-index:0;backdrop-filter:url(#lg-warp)}
+.lg-frost{z-index:1;backdrop-filter:blur(3px) saturate(180%) brightness(1.06);-webkit-backdrop-filter:blur(3px) saturate(180%) brightness(1.06);background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.06) 55%,rgba(255,255,255,.12)),rgba(140,140,150,.12)}
+.lg-rim{z-index:2;box-shadow:inset 1.5px 1.5px 1px -0.5px rgba(255,255,255,.95),inset -1px -1px 1px -0.5px rgba(255,255,255,.6),inset 0 0 0 1px rgba(255,255,255,.18),inset 0 -10px 20px -12px rgba(255,255,255,.35),inset 0 10px 18px -14px rgba(255,255,255,.6)}
+/* footer icon links: the link stays put, only the icon inside grows */
+.ft-btn > img{transition:transform .35s cubic-bezier(.22,1,.36,1);pointer-events:none}
+.ft-btn:hover > img,.ft-btn:focus-visible > img{transform:scale(1.08)}
+/* experience card variant of the hint */
+.ft-tip.ft-card{width:340px;box-sizing:border-box;white-space:normal;text-align:left;border-radius:18px;padding:12px 16px 14px;display:flex;flex-direction:column}
+.ft-card-h{display:flex;align-items:baseline;gap:12px}
+.ft-card-t{flex:1;min-width:0;font-size:14px;line-height:20px;font-weight:600;color:#1d1d1f}
+.ft-card-d{flex:none;font-size:12px;line-height:20px;color:rgba(0,0,0,.45)}
+.ft-card-r{font-size:13px;line-height:18px;color:#1d1d1f;margin-top:1px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,.1)}
+.ft-card-p{font-size:13px;line-height:18px;color:rgba(0,0,0,.55);margin-top:10px}
+/* macOS Dock-style hint above a footer icon */
+.ft-tip{position:absolute;left:50%;bottom:calc(100% + 16px + 16px);transform:translate(calc(-50% + var(--dx, 0px)),4px);opacity:0;pointer-events:none;white-space:nowrap;padding:5px 14px 6px;border-radius:999px;background:#f2f2f2;filter:drop-shadow(0 0 .5px rgba(0,0,0,.28)) drop-shadow(0 3px 8px rgba(0,0,0,.14));font:400 14px/18px 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:.1px;color:#1d1d1f;transition:opacity .15s ease,transform .2s cubic-bezier(.22,1,.36,1)}
+.ft-tip::after{content:"";position:absolute;left:calc(50% - var(--dx, 0px));top:calc(100% - 1px);width:26px;height:10px;margin-left:-13px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='10' viewBox='0 0 26 10'%3E%3Cpath d='M0 0C8 0 10 9.4 13 9.4S18 0 26 0Z' fill='%23f2f2f2'/%3E%3C/svg%3E") no-repeat}
+.ft-btn:hover .ft-tip,.ft-btn:focus-visible .ft-tip{opacity:1;transform:translate(calc(-50% + var(--dx, 0px)),0)}
+/* token grouping demo: a pure-CSS 12s loop (no JS state, no re-renders) — Networks → Tokens → open DOT → close → Networks */
+.tk .tk-net,.tk .tk-all,.tk .tk-tn,.tk .tk-tt,.tk .tk-sq,.tk .tk-ci,.tk .tk-dot,.tk .tk-ext,.tk .tk-rows,.tk .tk-card,.tk .tk-div,.tk .tk-eth{animation-duration:12s;animation-iteration-count:infinite;animation-fill-mode:both}
+.tk .tk-net{animation-name:tk-net;will-change:transform,opacity}
+.tk .tk-all{animation-name:tk-all;will-change:transform,opacity}
+.tk .tk-tn{animation-name:tk-tn}.tk .tk-tt{animation-name:tk-tt}
+.tk .tk-sq{animation-name:tk-sq}.tk .tk-ci{animation-name:tk-ci}
+.tk .tk-dot{animation-name:tk-dot}.tk .tk-ext{animation-name:tk-ext}.tk .tk-rows{animation-name:tk-rows}
+.tk .tk-card{animation-name:tk-card}.tk .tk-div{animation-name:tk-rows}.tk .tk-eth{animation-name:tk-eth}
+@keyframes tk-net{0%,25%{opacity:1;transform:none;animation-timing-function:cubic-bezier(.65,0,.35,1)}28.333%,81.667%{opacity:0;transform:translateY(109.88px) scale(.3876);animation-timing-function:cubic-bezier(.65,0,.35,1)}85%,100%{opacity:1;transform:none}}
+@keyframes tk-all{0%,25%{opacity:0;transform:translateY(110.85px) scale(.466);animation-timing-function:cubic-bezier(.65,0,.35,1)}28.333%,81.667%{opacity:1;transform:none;animation-timing-function:cubic-bezier(.65,0,.35,1)}85%,100%{opacity:0;transform:translateY(110.85px) scale(.466)}}
+@keyframes tk-tn{0%,25%{opacity:1;transform:none;animation-timing-function:cubic-bezier(.68,-.6,.32,1.6)}28.333%,81.667%{opacity:0;transform:translateY(-30.77px);animation-timing-function:cubic-bezier(.68,-.6,.32,1.6)}85%,100%{opacity:1;transform:none}}
+@keyframes tk-tt{0%,25%{opacity:0;transform:translateY(30.77px);animation-timing-function:cubic-bezier(.68,-.6,.32,1.6)}28.333%,81.667%{opacity:1;transform:none;animation-timing-function:cubic-bezier(.68,-.6,.32,1.6)}85%,100%{opacity:0;transform:translateY(30.77px)}}
+@keyframes tk-sq{0%,25%{opacity:.88}28.333%,81.667%{opacity:.16}85%,100%{opacity:.88}}
+@keyframes tk-ci{0%,25%{opacity:.16}28.333%,81.667%{opacity:.88}85%,100%{opacity:.16}}
+@keyframes tk-dot{0%,39%{transform:none;animation-timing-function:ease-out}40.4%{transform:scale(.985);animation-timing-function:ease-in-out}42%,100%{transform:none}}
+@keyframes tk-ext{0%,41.667%{left:20.48px;width:398.56px;top:82.01px;height:5.1px;border-radius:0 0 8px 8px;background:rgba(153,158,199,.24);animation-timing-function:cubic-bezier(.65,0,.35,1)}45%,66.667%{left:0;width:439.52px;top:81.66px;height:220.64px;border-radius:0 0 15.38px 15.38px;background:rgba(153,158,199,.1);animation-timing-function:cubic-bezier(.33,1,.68,1)}69.167%,100%{left:20.48px;width:398.56px;top:82.01px;height:5.1px;border-radius:0 0 8px 8px;background:rgba(153,158,199,.24)}}
+@keyframes tk-rows{0%,41.667%{opacity:0;animation-timing-function:ease-out}45%,66.667%{opacity:1;animation-timing-function:ease-out}68.5%,100%{opacity:0}}
+@keyframes tk-card{0%,41.667%{border-radius:15.38px;animation-timing-function:cubic-bezier(.65,0,.35,1)}45%,66.667%{border-radius:15.38px 15.38px 0 0;animation-timing-function:cubic-bezier(.33,1,.68,1)}69.167%,100%{border-radius:15.38px}}
+@keyframes tk-eth{0%,41.667%{transform:none;animation-timing-function:cubic-bezier(.65,0,.35,1)}45%,66.667%{transform:translateY(216.16px);animation-timing-function:cubic-bezier(.33,1,.68,1)}69.167%,100%{transform:none}}
+@media (prefers-reduced-motion: reduce){.tk .tk-net,.tk .tk-all,.tk .tk-tn,.tk .tk-tt,.tk .tk-sq,.tk .tk-ci,.tk .tk-dot,.tk .tk-ext,.tk .tk-rows,.tk .tk-card,.tk .tk-div,.tk .tk-eth{animation:none}.tk .tk-all,.tk .tk-tt{opacity:0}.tk .tk-ci{opacity:.16}.tk .tk-sq{opacity:.88}}
+/* status bar hints: exactly the footer hint look (.ft-tip / .ft-card), dropped below with the tail centred on top */
+.sb-item{position:relative}
+.sb-hov{cursor:default;outline:none}
+.sb-tip{position:absolute;left:50%;top:calc(100% + 16px);transform:translate(calc(-50% + var(--dx, 0px)),-4px);opacity:0;pointer-events:none;white-space:nowrap;padding:5px 14px 6px;border-radius:999px;background:#f2f2f2;filter:drop-shadow(0 0 .5px rgba(0,0,0,.28)) drop-shadow(0 3px 8px rgba(0,0,0,.14));font:400 14px/18px 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:.1px;color:#1d1d1f;text-transform:none;text-shadow:none;text-align:left;z-index:20;transition:opacity .15s ease,transform .2s cubic-bezier(.22,1,.36,1)}
+.sb-tip.sb-card{display:flex;flex-direction:column;border-radius:18px;padding:12px 16px 14px}
+.sb-tip.sb-card .ft-card-p{margin-top:2px}
+.sb-hov:hover .sb-tip,.sb-hov:focus-within .sb-tip{opacity:1;transform:translate(calc(-50% + var(--dx, 0px)),0)}
+/* the clock hint is the right-most one: pin it to the clock's right edge so it never leaves the screen */
+.sb-tip.sb-card{left:auto;right:0;transform:translate(0,-4px)}
+.sb-hov:hover .sb-tip.sb-card,.sb-hov:focus-within .sb-tip.sb-card{transform:translate(0,0)}
+/* language: macOS input-source item (badge + name) with a two-item menu in the hint */
+.sb-lang{display:flex;align-items:center;gap:6px;cursor:default}
+.sb-lang::after{content:"";position:absolute;left:-12px;right:-12px;top:100%;height:18px}
+.lang-badge{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:17px;padding:0 5px;box-sizing:border-box;border-radius:6px;background:rgba(255,255,255,.92);color:#4AAED2;font:600 10.5px/16px 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:.3px;text-transform:none;text-shadow:none;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.sb-menu{display:flex;flex-direction:column;gap:2px;padding:6px;border-radius:14px}
+.sb-hov:hover .sb-menu,.sb-hov:focus-within .sb-menu{pointer-events:auto}
+.sb-menu button{display:flex;align-items:center;gap:10px;width:100%;border:0;margin:0;padding:5px 14px 5px 6px;border-radius:9px;background:transparent;font:400 14px/18px 'IBM Plex Sans',system-ui,sans-serif;color:#1d1d1f;text-align:left;cursor:pointer;transition:background-color .15s ease}
+.sb-menu button:hover,.sb-menu button:focus-visible{background:rgba(0,0,0,.06);outline:none}
+.sb-menu button.on,.sb-menu button.on:hover{background:#1d1d1f;color:#fff}
+.sb-menu button.on .lang-badge{background:rgba(255,255,255,.92);color:#1d1d1f}
+.sb-menu .lang-badge{background:rgba(0,0,0,.08);color:#1d1d1f;box-shadow:none}
+/* language switch: every text has a RU and an EN copy; html.en shows English */
+::view-transition-old(root),::view-transition-new(root){animation-duration:.38s;animation-timing-function:cubic-bezier(.4,0,.2,1)}
+.le{display:none!important}
+/* «My work» is shorter than «Мои работы»: pull the arrow in after it */
+html.en .mw-a{left:128px!important}
+html.en .lr{display:none!important}
+html.en .le{display:inline!important}
+/* picture + text = one click area: the text link spans the full width, and the gap above it belongs to the link too */
+.sec>div>.blk{align-self:stretch}
+.s2>a.nv+div,.s4>a.nv+div{margin-top:0!important}
+.s2>a.nv+div>.blk,.s4>a.nv+div>.blk{padding-top:48px}
+/* year tag: quiet outline, grey numbers — reads as a label, not a button */
+.yr{display:inline-flex;align-items:center;height:26px;padding:0 12px;box-sizing:border-box;border-radius:999px;border:1.5px solid rgba(0,0,0,.12);color:rgba(0,0,0,.5);font-size:14px;font-weight:500;line-height:24px;font-variant-numeric:tabular-nums;letter-spacing:.2px}
+/* "new" marker: coloured text with a glowing dot instead of a filled pill */
+.new-tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;box-sizing:border-box;border-radius:999px;border:1.5px solid rgba(43,169,214,.28);color:#2BA9D6;font-size:13px;font-weight:600;line-height:24px;letter-spacing:.8px;text-transform:uppercase}
+/* hover effects run in CSS (not component state) so the page never re-renders under the cursor */
+.ph .ph-ui{opacity:0;transition:opacity .25s ease}
+.ph:hover .ph-ui,.ph:focus-within .ph-ui{opacity:1}
+.case-label{position:absolute;left:50%;z-index:5;transform:translate(-50%,8px);opacity:0;pointer-events:none;transition:opacity .25s ease,transform .35s cubic-bezier(.22,1,.36,1);background:#fff;border-radius:999px;padding:12px 20px 14px 20px;box-shadow:0 2px 12px rgba(0,0,0,.16);font-size:16px;font-weight:500;line-height:21px;color:#000;white-space:nowrap}
+.pd:hover .case-label,.sec:has(>div>.blk:hover)>a .case-label,.pd:focus-visible .case-label,.nv:hover .case-label,.nv:focus-visible .case-label{opacity:1;transform:translate(-50%,0)}
+.st:hover .case-label,.st:focus-within .case-label{opacity:1;transform:translate(-50%,0)}
+/* staking card: the whole card is a link (a stretched link under the source chip); the phone grows a little on hover */
+.st .st-phone{transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.st:hover .st-phone,.st:focus-within .st-phone{transform:scale(1.03)}
+/* source chips: the link stays put, the inner pill grows from its left edge */
+.chip-link .chip-inner{background:rgba(0,121,233,.06);transform-origin:left center;transition:transform .35s cubic-bezier(.22,1,.36,1),background-color .35s ease,box-shadow .35s cubic-bezier(.22,1,.36,1)}
+.chip-link:hover .chip-inner,.chip-link:focus-visible .chip-inner{transform:scale(1.025);background:rgba(0,121,233,.12)}
+.chip-link{max-width:100%}
+.chip-inner{max-width:100%;box-sizing:border-box}
+.chip-inner svg{flex:none}
+.chip-txt{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* moving pictures ignore the pointer (hit-testing always lands on the still link) and live on their own GPU layer, so big shadows aren't repainted every frame */
+.pd .pd-shot{transition:transform .6s cubic-bezier(.22,1,.36,1);pointer-events:none;will-change:transform;backface-visibility:hidden}
+.pd:hover .pd-chat,.sec:has(>div>.blk:hover) .pd-chat,.pd:focus-visible .pd-chat{transform:translate(-18px,-4px) rotate(-1.2deg)}
+.pd:hover .pd-ds,.sec:has(>div>.blk:hover) .pd-ds,.pd:focus-visible .pd-ds{transform:translateY(-6px) scale(1.015)}
+.pd:hover .pd-mob,.sec:has(>div>.blk:hover) .pd-mob,.pd:focus-visible .pd-mob{transform:translate(16px,-4px) rotate(1.5deg)}
+/* cover: the shadow is a separate layer that only fades in (no box-shadow animation = no repaint under the cursor) */
+.nv::before{content:"";position:absolute;inset:0;border-radius:32px;box-shadow:0 18px 40px rgba(20,24,60,.22);opacity:0;transform:scale(1);pointer-events:none;will-change:transform,opacity;transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+.nv .nv-inner{position:relative;z-index:1;pointer-events:none;will-change:transform;backface-visibility:hidden;transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.nv:hover::before,.sec:has(>div>.blk:hover) .nv::before,.nv:focus-visible::before{opacity:1;transform:scale(1.02)}
+.nv:hover .nv-inner,.sec:has(>div>.blk:hover) .nv .nv-inner,.nv:focus-visible .nv-inner{transform:scale(1.02)}
+/* the link itself never moves; only the inner pill scales, so the hover area is stable at the edges */
+.store-btn .store-inner{background:#000;transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s cubic-bezier(.22,1,.36,1),background-color .35s ease}
+.store-btn:hover .store-inner,.store-btn:focus-visible .store-inner{transform:scale(1.05);box-shadow:0 8px 20px rgba(0,0,0,.22);background:#333}
+
+/* ================= RESPONSIVE =================
+   ≥1120  desktop: content 1080, centred (nothing below applies)
+   768–1119 tablet: fluid, 32px side gutters, 2-column cards
+   <768   mobile: one column, 16px side gutters
+   Fixed-size compositions (collages, phones, Ledger/Token stages, photo tiles) keep their
+   desktop geometry and are scaled with `zoom`; the factors come from setupResponsive():
+   --zw (1080-wide collages), --zc (520-wide cards), --zt (hero tiles), and their inverses. */
+:root{--g:20px;--zw:1;--izw:1;--zc:1;--izc:1;--zt:1;--zx:1}
+@media (max-width:1119.98px){
+:root{--g:32px}
+.ft-tip{display:none!important}
+.hero{height:auto!important;padding:72px 0 56px}
+.sb{left:calc(var(--g) + 12px)!important;right:calc(var(--g) + 12px)!important}
+.hero-card{top:0!important;width:auto!important;height:auto!important;margin:0 var(--g)!important;padding-bottom:40px}
+.hero-top{flex-direction:column;gap:16px}
+.hero-h1{font-size:36px!important;line-height:46px!important}
+.hero-p{width:auto!important;max-width:none;margin:0!important}
+.hero-p br{display:none}
+.hero-tiles{position:static!important;margin:32px 40px 0}
+.sec{width:auto!important;max-width:1080px;margin-left:var(--g)!important;margin-right:var(--g)!important}
+.s1{padding-bottom:80px!important}
+.s2{margin-top:24px!important;padding-bottom:96px!important}
+.s3{padding-bottom:72px!important}
+.zw{zoom:var(--zw)}
+.zw .case-label{font-size:calc(16px * var(--izw));line-height:calc(21px * var(--izw));padding:calc(12px * var(--izw)) calc(20px * var(--izw)) calc(14px * var(--izw));box-shadow:0 calc(2px * var(--izw)) calc(12px * var(--izw)) rgba(0,0,0,.16)}
+.pg h2{font-size:28px!important;line-height:36px!important}
+.nv{width:100%!important;height:auto!important}
+.nv-inner{width:100%!important;height:auto!important;aspect-ratio:1080/501}
+.nv-inner>img{width:100%!important;height:100%!important}
+.nv-inner .case-label{top:calc(50% - 23px)!important}
+.cards{gap:24px!important;margin-top:72px!important}
+.cd{height:auto!important;display:flex;flex-direction:column}
+.cd-ph{position:relative!important;left:auto!important;top:auto!important;transform:none!important;margin:8px auto 0;zoom:var(--zc)}
+.cd-stage{position:relative!important;left:auto!important;top:auto!important;margin:-1px -1px 0;zoom:var(--zc)}
+.cd-txt{position:static!important;width:auto!important;padding:20px 23px 28px}
+.cl-st{top:calc(372px * var(--zc))!important}
+.cd-more{height:auto!important}
+.dock{margin-top:56px!important}
+}
+@media (max-width:767.98px){
+/* phone videos in the cards: a bit larger than the plain card scale */
+.cd-ph{zoom:calc(var(--zc) * 1.16)}
+.cl-st{top:calc(364px * var(--zc) * 1.16 + 8px)!important}
+:root{--g:16px}
+.hero{padding:64px 0 64px}
+.sb{left:calc(var(--g) + 4px)!important;right:calc(var(--g) + 4px)!important;top:12px!important}
+.sb-x,.sb-langname{display:none!important}
+.sb-lang{padding:12px;margin:-12px}
+.sb-lang .lang-badge{min-width:30px;height:24px;font-size:12px;line-height:24px;border-radius:8px}
+.sb-lang::after{display:none}
+.sb-menu{left:auto!important;right:0;transform:translate(0,-4px)!important}
+.sb-hov:focus-within .sb-menu{transform:translate(0,0)!important}
+.sb-menu button{padding:10px 16px 10px 10px;font-size:16px;line-height:20px}
+.hero-card{border-radius:32px!important;padding-bottom:20px}
+.hero-top{padding:24px 20px 0!important;gap:12px}
+.hero-h1{font-size:28px!important;line-height:36px!important}
+.hero-p{font-size:17px!important;line-height:24px!important}
+/* hero tiles stretch to the card width: three in a row while each is 150+,
+   otherwise photo + map share the row and experience becomes a full-width strip below */
+.hero-tiles{display:grid!important;grid-template-columns:1fr 1fr;gap:12px!important;margin:24px 20px 0}
+.t-photo{zoom:var(--zt)}
+.t-map{zoom:var(--zx)}
+html.tiles-3 .hero-tiles{grid-template-columns:repeat(3,max-content)}
+html.tiles-3 .t-xp{zoom:var(--zx);margin-left:0!important}
+html:not(.tiles-3) .t-xp{grid-column:1 / -1;display:flex;align-items:center;width:auto!important;height:88px!important;margin:0!important;padding:0 20px;box-sizing:border-box;border-radius:24px!important}
+html:not(.tiles-3) .t-xp>span{position:static!important}
+html:not(.tiles-3) .xp-n{margin-left:auto;font-size:48px!important;line-height:56px!important}
+html:not(.tiles-3) .xp-u{margin-left:6px;align-self:flex-end;margin-bottom:19px}
+.s1{padding-bottom:150px!important}
+/* same visual gap (~32px) from every picture to its year chip */
+.s1 .zw+div>.blk{padding-top:14px}
+.s3 .zw+div>.blk{padding-top:26px}
+.s2>a.nv+div>.blk,.s4>a.nv+div>.blk{padding-top:32px}
+.s2{margin-top:0!important;padding-top:0!important;padding-bottom:64px!important}
+.s3{padding-bottom:56px!important}
+.pg h2{font-size:24px!important;line-height:30px!important}
+.sec p{font-size:17px!important;line-height:24px!important}
+.stores{align-self:stretch;gap:12px!important}
+.store-btn{flex:1 1 0;width:auto!important;min-width:0}
+.store-btn .store-inner{width:100%!important}
+/* case labels on image blocks: chip size, like the year / НОВОЕ chips */
+.case-label{font-size:15px;line-height:28px;padding:2px 16px;font-weight:500}
+.nv-inner .case-label{top:calc(50% - 16px)!important}
+/* «Мои работы» note: keep it readable (≈12px) instead of shrinking with the collage; the arrow follows in em */
+.zw .mw-t,.zw .mw-a{font-size:calc(12px * var(--izw))!important}
+.zw .mw-t{top:calc(50px - 1.27em)!important;line-height:1.27em!important}
+.zw .mw-a{left:calc(35px + 5.86em)!important;top:calc(50px - 0.63em)!important;width:1.86em!important;height:1.68em!important}
+html.en .zw .mw-a{left:calc(35px + 4.23em)!important}
+.zw .case-label{font-size:calc(15px * var(--izw));line-height:calc(28px * var(--izw));padding:calc(2px * var(--izw)) calc(16px * var(--izw))}
+.nv-inner,.nv::before{border-radius:24px!important}
+.cards{grid-template-columns:minmax(0,1fr)!important;gap:16px!important;margin-top:48px!important}
+.cd,.cd-more{border-radius:32px!important}
+.cd-more{grid-column:auto!important;padding:20px!important}
+.cd h3,.cd-more h3{font-size:22px!important;line-height:28px!important}
+.cd p{font-size:16px!important;line-height:22px!important}
+.cd-txt{padding:16px 20px 24px}
+.stats{gap:24px!important}
+/* dock: 48px icons, swipe sideways */
+.dock{width:fit-content!important;max-width:calc(100% - 2 * var(--g));box-sizing:border-box;margin:48px auto 0!important;padding-bottom:max(12px, env(safe-area-inset-bottom))!important}
+.dock .lg{padding:0!important;border-radius:22px!important}
+.dock-scroll{display:flex;align-items:center;gap:10px;padding:10px;border-radius:inherit;scroll-padding:0 10px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch;position:relative;z-index:3;min-width:0;flex:1}
+.dock-scroll::-webkit-scrollbar{display:none}
+.dock-scroll>a.ft-btn{flex:none;width:48px!important;height:48px!important;scroll-snap-align:start}
+.dock-scroll>a.ft-btn>img{width:48px!important;height:48px!important}
+.dock-scroll>span:not([class]){flex:none;height:40px!important;margin:0 4px!important}
+.lg-warp{display:none}
+.bs-panel{max-width:none}
+}
+/* mobile: bigger dock — easier to see and tap */
+@media (max-width:767.98px){.dock .lg{border-radius:30px!important}.dock-scroll{gap:14px;padding:14px;scroll-padding:0 14px}.dock-scroll>a.ft-btn,.dock-scroll>a.ft-btn>img{width:64px!important;height:64px!important}.dock-scroll>a.ft-btn>img{border-radius:15px}.dock-scroll>span:not([class]){height:52px!important;margin:0 2px!important}}
+/* touch screens: no hover, so labels sit on image blocks, slider shows dots (swipe to change), status hints are off */
+/* labels sit on image blocks on tablets and phones (and any touch screen) */
+@media (max-width:1119.98px), (hover:none){
+.case-label{opacity:1!important;transform:translate(-50%,0)!important}
+}
+@media (hover:none){
+.ph button.ph-ui{display:none!important}
+.ph div.ph-ui{opacity:1!important}
+.sb-tip:not(.sb-menu){display:none!important}
+.ft-tip{display:none!important}
+.ft-btn:hover>img{transform:none}
+}
+/* bottom sheet for footer experience cards (touch / mobile) */
+.bs-wrap{position:fixed;inset:0;z-index:5000;pointer-events:none}
+.bs-back{position:absolute;inset:0;background:rgba(0,0,0,.4);opacity:0;transition:opacity .25s ease}
+.bs-panel{position:absolute;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));max-width:661px;margin:0 auto;max-height:80vh;overflow:auto;box-sizing:border-box;padding:20px 20px 24px;border-radius:24px;background:#f2f2f2;box-shadow:0 8px 32px rgba(0,0,0,.22);font-family:'IBM Plex Sans',system-ui,sans-serif;color:#1d1d1f;transform:translateY(calc(100% + 40px));visibility:hidden;transition:transform .35s cubic-bezier(.22,1,.36,1),visibility 0s linear .35s}
+.bs-body{display:flex;flex-direction:column}
+.bs-body .ft-card-h{display:flex;align-items:baseline;gap:12px}
+.bs-close{position:absolute;top:16px;right:12px;display:flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:0;border-radius:50%;background:rgba(0,0,0,.06);color:rgba(0,0,0,.45);cursor:pointer;transition:background-color .15s ease}
+.bs-close:hover,.bs-close:focus-visible{background:rgba(0,0,0,.1);outline:none}
+.bs-body .ft-card-h{padding-right:44px}
+.bs-panel .ft-card-t{font-size:18px;line-height:24px}
+.bs-panel .ft-card-d{font-size:14px;line-height:24px}
+.bs-panel .ft-card-r{font-size:15px;line-height:20px;margin-top:2px}
+.bs-panel .ft-card-p{font-size:16px;line-height:23px;margin-top:12px}
+.bs-tool{display:grid;grid-template-columns:56px 1fr;column-gap:14px;align-items:center;padding-right:44px}
+.bs-tool-ico{grid-row:1 / 3;position:relative;display:block;width:56px;height:56px;border-radius:16px;overflow:hidden}
+.bs-tool-ico .tl-ico{width:56px!important;height:56px!important;border-radius:16px}
+.bs-tool .ft-card-t{align-self:end}
+.bs-panel .bs-tool .ft-card-p{margin-top:2px;align-self:start}
+@media (max-width:1119.98px),(hover:none){.tl-app{-webkit-tap-highlight-color:transparent}}
+.bs-wrap.open{pointer-events:auto}
+.bs-wrap.open .bs-back{opacity:1}
+.bs-wrap.open .bs-panel{transform:none;visibility:visible;transition:transform .35s cubic-bezier(.22,1,.36,1),visibility 0s}
+/* hero v2: text on the gradient, tiles on the right */
+.hero-grid{position:absolute;left:-12%;top:0;width:124%;height:760px;z-index:-1;pointer-events:none}
+@media (max-width:767.98px){.hero-grid{height:620px}}
+.pg{position:relative;z-index:0}
+/* the hand-drawn arrow PNG has an opaque page-colour background: blend it away over the gradient */
+
+.hero .sb .lang-badge{color:#E04E16}
+/* light drift: the saturated corner and the white light slowly wander */
+@property --hx{syntax:'<percentage>';inherits:true;initial-value:0%}
+@property --hy{syntax:'<percentage>';inherits:true;initial-value:0%}
+@property --lx{syntax:'<percentage>';inherits:true;initial-value:82%}
+@property --ly{syntax:'<percentage>';inherits:true;initial-value:30%}
+.hero-bg{--hx:0%;--hy:0%;--lx:82%;--ly:30%;animation:hbDrift 12s ease-in-out infinite alternate}
+@keyframes hbDrift{0%{--hx:0%;--hy:0%;--lx:82%;--ly:30%}33%{--hx:18%;--hy:8%;--lx:74%;--ly:22%}66%{--hx:6%;--hy:16%;--lx:88%;--ly:36%}100%{--hx:26%;--hy:2%;--lx:78%;--ly:26%}}
+@media (prefers-reduced-motion:reduce){.hero-bg{animation:none}}
+/* IBM Plex Serif: Light for the title and description; weight stays editable (no !important) */
+.hero-p,.hero-h1{font-weight:300}
+/* the background slowly drifts orange -> blue -> violet -> orange (48s loop) */
+.hb-layer{position:absolute;inset:0;opacity:0;pointer-events:none}
+.hb-blue{animation:hbBlue 18s ease-in-out infinite}
+.hb-violet{animation:hbViolet 18s ease-in-out infinite}
+@keyframes hbBlue{0%,11%{opacity:0}33%,44%{opacity:1}66%,100%{opacity:0}}
+@keyframes hbViolet{0%,44%{opacity:0}66%,77%{opacity:1}100%{opacity:0}}
+@keyframes hbInk{0%,11%{color:#EE5C1C}33%,44%{color:#2E5BD6}66%,77%{color:#6A3FD6}100%{color:#EE5C1C}}
+/* experience number: accent colour on a pastel chip that follows the background colour */
+@keyframes hbPastel{0%,11%{background-color:#FDE4D3}33%,44%{background-color:#DDE8FC}66%,77%{background-color:#E7DFFB}100%{background-color:#FDE4D3}}
+/* experience: metallic pin badge; the enamel centre follows the accent colour */
+.hero-v2 .xp-n.xp-n-badge{width:84px!important;height:84px!important;border-radius:50%!important;background:none!important;padding:0;margin-right:-6px;color:#EE5C1C;animation:hbInk 18s ease-in-out infinite;filter:drop-shadow(0 6px 10px rgba(60,30,10,0.22)) drop-shadow(0 1px 1px rgba(0,0,0,0.25))}
+.xp-badge{display:block;width:84px;height:84px;overflow:visible}
+.xp-sheen{animation:xpSheen 6s ease-in-out infinite}
+@keyframes xpSheen{0%,55%{transform:rotate(28deg) translateX(0)}85%,100%{transform:rotate(28deg) translateX(190px)}}
+.xp-sheen{transform-origin:60px 60px;transform-box:view-box}
+.hero-v2 .t-xp:has(.xp-n-badge){height:108px!important}
+@keyframes hbDot{0%,11%{background:#EE5C1C}33%,44%{background:#2E5BD6}66%,77%{background:#6A3FD6}100%{background:#EE5C1C}}
+.hero .sb .lang-badge,.hero-v2 .hc-open{animation:hbInk 18s ease-in-out infinite}
+.hero-v2 .hc-open .hc-dot{animation:hbDot 18s ease-in-out infinite!important}
+/* page entrance: soft staggered fade-up. Uses opacity + the individual translate/scale properties
+   (not transform) and fill-mode backwards, so it never fights inline transforms, dragging or hover */
+@keyframes inUp{from{opacity:0;translate:0 18px;filter:blur(6px)}to{opacity:1;translate:0 0;filter:blur(0)}}
+@keyframes inTile{from{opacity:0;translate:0 22px;scale:.94}to{opacity:1;translate:0 0;scale:1}}
+@keyframes inDock{from{translate:0 140%}to{translate:0 0}}
+@keyframes inFade{from{opacity:0}to{opacity:1}}
+.hero-bg{animation-name:hbDrift,inFade;animation-duration:12s,1.2s;animation-timing-function:ease-in-out,ease-out;animation-iteration-count:infinite,1;animation-direction:alternate,normal;animation-fill-mode:none,backwards}
+.hero .sb{animation:inFade .8s ease-out .05s backwards}
+.hero-v2 .hero-chips{animation:inUp .9s cubic-bezier(.22,1,.36,1) .15s backwards}
+.hero-v2 .hero-h1{animation:inUp 1s cubic-bezier(.22,1,.36,1) .25s backwards}
+.hero-v2 .hero-p{animation:inUp 1s cubic-bezier(.22,1,.36,1) .35s backwards}
+.hero-v2 .t-photo{animation:inTile .9s cubic-bezier(.22,1,.36,1) .45s backwards}
+.hero-v2 .t-map{animation:inTile .9s cubic-bezier(.22,1,.36,1) .53s backwards}
+.hero-v2 .t-xp{animation:inTile .9s cubic-bezier(.22,1,.36,1) .61s backwards}
+.hero-v2 .t-tools{animation:inTile .9s cubic-bezier(.22,1,.36,1) .69s backwards}
+.sec.s1{animation:inUp 1.1s cubic-bezier(.22,1,.36,1) .75s backwards}
+.dock{animation:inDock .9s cubic-bezier(.22,1,.36,1) .9s backwards}
+/* hold the entrance until the photo + map are decoded (JS adds .hero-ready, max ~1.2s) */
+html:not(.hero-ready) .hero-bg,html:not(.hero-ready) .hero .sb,html:not(.hero-ready) .hero-v2 .hero-chips,html:not(.hero-ready) .hero-v2 .hero-h1,html:not(.hero-ready) .hero-v2 .hero-p,html:not(.hero-ready) .hero-v2 .t-photo,html:not(.hero-ready) .hero-v2 .t-map,html:not(.hero-ready) .hero-v2 .t-xp,html:not(.hero-ready) .hero-v2 .t-tools,html:not(.hero-ready) .sec.s1,html:not(.hero-ready) .dock{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.hero .sb,.hero-v2 .hero-chips,.hero-v2 .hero-h1,.hero-v2 .hero-p,.hero-v2 .t-photo,.hero-v2 .t-map,.hero-v2 .t-xp,.hero-v2 .t-tools,.sec.s1,.dock{animation:none!important}.hero-bg{animation:none!important}}
+@media (prefers-reduced-motion:reduce){.hb-layer,.hero .sb .lang-badge,.hero-v2 .hc-open,.hero-v2 .hc-open .hc-dot,.hero-v2 .xp-n,.xp-sheen{animation:none!important}}
+
+.hero-bg::after{content:"";position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(180deg,rgba(248,249,252,0) 0%,rgba(248,249,252,0.6) 55%,#F8F9FC 100%);pointer-events:none}
+/* title width matches the 500px description column */
+@media (min-width:1120px){.hero-v2 .hero-h1{font-size:72px!important;line-height:80px!important}html:not(.en) .hero-v2 .hero-h1{font-size:80px!important;line-height:88px!important}}
+@media (max-width:1119.98px){.hero-v2 .hero-h1{font-size:64px!important;line-height:72px!important}}
+.hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:-2px}
+.hc{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 12px;box-sizing:border-box;border-radius:999px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.18);color:#fff;font-size:13px;font-weight:600;line-height:24px;letter-spacing:.8px;text-transform:uppercase;white-space:nowrap}
+/* open to work: green pill, lighter in the middle, deeper at the edges */
+.hc-open{background:radial-gradient(70% 140% at 50% 50%,#3DFF72 0%,#16E24F 50%,#00B83A 100%);border:0;color:#fff}
+.hc-dot{width:7px;height:7px;border-radius:50%;background:#fff;animation:hcPulse 2.4s ease-in-out infinite}
+@keyframes hcPulse{0%,100%{opacity:1}50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.hc-dot{animation:none}}
+@media (max-width:767.98px){.hc{font-size:12px;letter-spacing:.6px}}
+/* hero v2 widgets: macOS-style, no shadows, draggable on desktop */
+.hero-v2 .ph,.hero-v2 .t-map{box-shadow:none!important}
+/* experience: white widget, label on the left, the number in a square chip on the right */
+.hero-v2 .t-xp{text-shadow:none!important;border:0!important;background:rgba(255,255,255,0.8)!important;-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);box-shadow:none!important;padding:0 18px 0 24px!important;text-transform:none!important}
+.hero-v2 .xp-l{font-size:17px!important;font-weight:500!important;line-height:24px!important}
+.hero-v2 .xp-n{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:14px;background:rgba(0,0,0,0.06);color:#000;font-size:40px!important;line-height:48px!important}
+.hero-v2 .xp-u{display:none!important}
+.hero-v2 .wd-xp{grid-column:1 / -1}
+.hero-v2 .t-xp{display:flex;align-items:center;width:auto!important;height:100px!important;padding:0 24px;box-sizing:border-box}
+.hero-v2 .t-xp>span{position:static!important}
+.hero-v2 .xp-n{margin-left:auto;font-size:64px!important;line-height:72px!important}
+.hero-v2 .xp-u{margin-left:6px;align-self:flex-end;margin-bottom:22px}
+@media (min-width:1120px) and (hover:hover){
+.hero-v2 .wd{cursor:grab;touch-action:none;transition:transform .2s cubic-bezier(.22,1,.36,1)}
+.hero-v2 .wd .tl-app{cursor:default}.hero-v2 .wd.drag .tl-app{cursor:grabbing}
+.hero-v2 .wd.drag{cursor:grabbing;transition:none;z-index:5;transform:scale(1.03)}
+.hero-v2 .wd button{cursor:pointer}
+}
+@media (max-width:1119.98px){.hero-v2 .wd{display:contents}.hero-v2 .t-xp{grid-column:1 / -1}}
+@media (min-width:768px){.hero-v2 .hero-tiles{grid-template-columns:180px 180px}}
+@media (max-width:767.98px){.hero-v2 .hero-tiles,html.tiles-3 .hero-v2 .hero-tiles{grid-template-columns:1fr 1fr!important}.hero-v2 .t-xp{grid-column:1 / -1}.hero-v2 .t-xp{height:88px!important}}
+
+
+/* v3: 2×2 widgets — square experience + tools */
+.hero-v2 .hero-tiles .wd-xp{grid-column:auto}
+.hero-v2 .hero-tiles .t-xp{display:block!important;width:180px!important;height:180px!important;padding:0!important;border-radius:32px!important;grid-column:auto!important;margin:0!important;zoom:1}
+.hero-v2 .hero-tiles .t-xp>span{position:absolute!important}
+.hero-v2 .hero-tiles .t-xp .xp-l{left:20px!important;top:18px!important;right:20px;font-size:15px!important;line-height:20px!important;color:#EE5C1C;animation:hbInk 18s ease-in-out infinite}
+.hero-v2 .hero-tiles .t-xp .xp-n.xp-n-txt{left:14.5px!important;bottom:10px;top:auto!important;width:auto!important;height:auto!important;margin:0!important;padding:0;background:none!important;border-radius:0!important;display:block;font-family:'IBM Plex Serif',Georgia,serif;font-weight:400;font-size:104px!important;line-height:104px!important;letter-spacing:-2px;color:#EE5C1C;animation:hbInk 18s ease-in-out infinite}
+.hero-v2 .hero-tiles .t-xp .xp-n.xp-n-badge{left:auto!important;top:auto!important;right:14px;bottom:14px;width:100px!important;height:100px!important;margin:0}
+.hero-v2 .hero-tiles .t-xp .xp-badge{width:100px;height:100px}
+.t-tools{position:relative;width:180px;height:180px;border-radius:32px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.8);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6)}
+.tl-h{position:absolute;left:20px;top:18px;font:500 15px/20px 'IBM Plex Sans',system-ui,sans-serif;color:rgba(0,0,0,0.55)}
+.tl-grid{display:grid;grid-template-columns:68px 68px;gap:12px}
+.tl-app{position:relative;display:block;width:68px;height:68px;outline:none}
+.tl-face{position:relative;display:block;width:68px;height:68px;border-radius:19px;transform:translateZ(0);backface-visibility:hidden;will-change:transform;transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.tl-ico{display:block;width:68px;height:68px;border-radius:19px;overflow:hidden;pointer-events:none;-webkit-user-select:none;user-select:none}
+/* rim exactly like the dock icons: 1px white inner stroke, 135° gradient white → clear (30–64%) → white — part of .tl-face, so it scales as one piece */
+.tl-face::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;padding:1px;box-sizing:border-box;background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,0) 29.8%,rgba(255,255,255,0) 63.7%,#fff 100%);-webkit-mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);-webkit-mask-composite:xor;z-index:2}
+.tl-app:hover .tl-face,.tl-app:focus-visible .tl-face{transform:translateZ(0) scale(1.08)}
+.tl-app .tl-tip{z-index:3}
+.tl-app .tl-tip{bottom:calc(100% + 14px);width:max-content;max-width:230px;z-index:20}
+.tl-app:hover .tl-tip,.tl-app:focus-visible .tl-tip{opacity:1;transform:translate(calc(-50% + var(--dx, 0px)),0)}
+.tl-tip .ft-card-p{margin-top:2px}
+.hero-v2 .hero-tiles{z-index:40}.hero-v2 .wd{position:relative}.hero-v2 .ph{isolation:isolate}.hero-v2 .wd:hover,.hero-v2 .wd:focus-within{z-index:40}
+@media (max-width:1119.98px){.hero-v2 .hero-tiles .t-xp,.t-tools{zoom:var(--zt)}}
+/* all four tiles exactly 180 (map was 178), so every gap is the same */
+.hero-v2 .t-map{width:180px!important;height:180px!important}.hero-v2 .t-map img{width:182px!important;height:182px!important}
+/* mobile: one row of 164×164 widgets, scrolled sideways (no dragging below 1120) */
+@media (max-width:767.98px){.hero-card.hero-v2 .hero-tiles{grid-template-columns:repeat(4,max-content)!important;gap:12px!important;justify-content:start!important;overflow-x:auto;overflow-y:hidden;margin:24px calc(-1 * var(--g)) 0!important;padding:0 calc(var(--g) + 4px);scroll-padding:0 calc(var(--g) + 4px);scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}.hero-v2 .hero-tiles::-webkit-scrollbar{display:none}.hero-v2 .hero-tiles::after{content:"";width:calc(var(--g) - 8px)}.hero-v2 .t-photo,.hero-v2 .t-map,.hero-v2 .t-xp,.hero-v2 .t-tools{scroll-snap-align:start}.hero-v2 .t-map{zoom:var(--zx)}}
+/* tablet: all four widgets in one row */
+@media (min-width:768px) and (max-width:1119.98px){.hero-card.hero-v2 .hero-tiles{grid-template-columns:repeat(4,max-content)!important;gap:16px!important;justify-content:start!important}.hero-v2 .t-map{zoom:var(--zx)}.hero-v2 .t-photo{zoom:var(--zt)}}
+@media (min-width:1120px){.hero-v2 .hero-top{position:absolute;left:0;top:var(--tiles-c,50%);transform:translateY(-50%);padding-top:0!important}}
+@media (max-width:1119.98px){.hero-v2{padding-bottom:24px}.hero-v2 .hero-top{max-width:none;padding:8px 12px 0!important}.hero-v2 .hero-tiles{margin:32px 12px 0!important}.hero-v2 .hero-p{width:auto!important}}
+@media (max-width:767.98px){.hero-v2 .hero-top{padding:8px 4px 0!important}.hero-v2 .hero-tiles{margin:24px 4px 0!important}.hero-v2 .hero-h1{font-size:44px!important;line-height:50px!important;letter-spacing:-0.8px!important}.hero-v2 .hero-tiles{justify-content:center}}
+</style>
+<style>html,body{margin:0;padding:0;background:#F8F9FC}</style>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "48bb66977f934bcaa9b010b48fb667f7"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+<div id="app"></div>
+<script>(function(global,factory){typeof exports==="object"&&typeof module!=="undefined"?module.exports=factory():typeof define==="function"&&define.amd?define(factory):(global=global||self,global.morphdom=factory())})(this,function(){"use strict";var DOCUMENT_FRAGMENT_NODE=11;function morphAttrs(fromNode,toNode){var toNodeAttrs=toNode.attributes;var attr;var attrName;var attrNamespaceURI;var attrValue;var fromValue;if(toNode.nodeType===DOCUMENT_FRAGMENT_NODE||fromNode.nodeType===DOCUMENT_FRAGMENT_NODE){return}for(var i=toNodeAttrs.length-1;i>=0;i--){attr=toNodeAttrs[i];attrName=attr.name;attrNamespaceURI=attr.namespaceURI;attrValue=attr.value;if(attrNamespaceURI){attrName=attr.localName||attrName;fromValue=fromNode.getAttributeNS(attrNamespaceURI,attrName);if(fromValue!==attrValue){if(attr.prefix==="xmlns"){attrName=attr.name}fromNode.setAttributeNS(attrNamespaceURI,attrName,attrValue)}}else{fromValue=fromNode.getAttribute(attrName);if(fromValue!==attrValue){fromNode.setAttribute(attrName,attrValue)}}}var fromNodeAttrs=fromNode.attributes;for(var d=fromNodeAttrs.length-1;d>=0;d--){attr=fromNodeAttrs[d];attrName=attr.name;attrNamespaceURI=attr.namespaceURI;if(attrNamespaceURI){attrName=attr.localName||attrName;if(!toNode.hasAttributeNS(attrNamespaceURI,attrName)){fromNode.removeAttributeNS(attrNamespaceURI,attrName)}}else{if(!toNode.hasAttribute(attrName)){fromNode.removeAttribute(attrName)}}}}var range;var NS_XHTML="http://www.w3.org/1999/xhtml";var doc=typeof document==="undefined"?undefined:document;var HAS_TEMPLATE_SUPPORT=!!doc&&"content"in doc.createElement("template");var HAS_RANGE_SUPPORT=!!doc&&doc.createRange&&"createContextualFragment"in doc.createRange();function createFragmentFromTemplate(str){var template=doc.createElement("template");template.innerHTML=str;return template.content.childNodes[0]}function createFragmentFromRange(str){if(!range){range=doc.createRange();range.selectNode(doc.body)}var fragment=range.createContextualFragment(str);return fragment.childNodes[0]}function createFragmentFromWrap(str){var fragment=doc.createElement("body");fragment.innerHTML=str;return fragment.childNodes[0]}function toElement(str){str=str.trim();if(HAS_TEMPLATE_SUPPORT){return createFragmentFromTemplate(str)}else if(HAS_RANGE_SUPPORT){return createFragmentFromRange(str)}return createFragmentFromWrap(str)}function compareNodeNames(fromEl,toEl){var fromNodeName=fromEl.nodeName;var toNodeName=toEl.nodeName;var fromCodeStart,toCodeStart;if(fromNodeName===toNodeName){return true}fromCodeStart=fromNodeName.charCodeAt(0);toCodeStart=toNodeName.charCodeAt(0);if(fromCodeStart<=90&&toCodeStart>=97){return fromNodeName===toNodeName.toUpperCase()}else if(toCodeStart<=90&&fromCodeStart>=97){return toNodeName===fromNodeName.toUpperCase()}else{return false}}function createElementNS(name,namespaceURI){return!namespaceURI||namespaceURI===NS_XHTML?doc.createElement(name):doc.createElementNS(namespaceURI,name)}function moveChildren(fromEl,toEl){var curChild=fromEl.firstChild;while(curChild){var nextChild=curChild.nextSibling;toEl.appendChild(curChild);curChild=nextChild}return toEl}function syncBooleanAttrProp(fromEl,toEl,name){if(fromEl[name]!==toEl[name]){fromEl[name]=toEl[name];if(fromEl[name]){fromEl.setAttribute(name,"")}else{fromEl.removeAttribute(name)}}}var specialElHandlers={OPTION:function(fromEl,toEl){var parentNode=fromEl.parentNode;if(parentNode){var parentName=parentNode.nodeName.toUpperCase();if(parentName==="OPTGROUP"){parentNode=parentNode.parentNode;parentName=parentNode&&parentNode.nodeName.toUpperCase()}if(parentName==="SELECT"&&!parentNode.hasAttribute("multiple")){if(fromEl.hasAttribute("selected")&&!toEl.selected){fromEl.setAttribute("selected","selected");fromEl.removeAttribute("selected")}parentNode.selectedIndex=-1}}syncBooleanAttrProp(fromEl,toEl,"selected")},INPUT:function(fromEl,toEl){syncBooleanAttrProp(fromEl,toEl,"checked");syncBooleanAttrProp(fromEl,toEl,"disabled");if(fromEl.value!==toEl.value){fromEl.value=toEl.value}if(!toEl.hasAttribute("value")){fromEl.removeAttribute("value")}},TEXTAREA:function(fromEl,toEl){var newValue=toEl.value;if(fromEl.value!==newValue){fromEl.value=newValue}var firstChild=fromEl.firstChild;if(firstChild){var oldValue=firstChild.nodeValue;if(oldValue==newValue||!newValue&&oldValue==fromEl.placeholder){return}firstChild.nodeValue=newValue}},SELECT:function(fromEl,toEl){if(!toEl.hasAttribute("multiple")){var selectedIndex=-1;var i=0;var curChild=fromEl.firstChild;var optgroup;var nodeName;while(curChild){nodeName=curChild.nodeName&&curChild.nodeName.toUpperCase();if(nodeName==="OPTGROUP"){optgroup=curChild;curChild=optgroup.firstChild}else{if(nodeName==="OPTION"){if(curChild.hasAttribute("selected")){selectedIndex=i;break}i++}curChild=curChild.nextSibling;if(!curChild&&optgroup){curChild=optgroup.nextSibling;optgroup=null}}}fromEl.selectedIndex=selectedIndex}}};var ELEMENT_NODE=1;var DOCUMENT_FRAGMENT_NODE$1=11;var TEXT_NODE=3;var COMMENT_NODE=8;function noop(){}function defaultGetNodeKey(node){if(node){return node.getAttribute&&node.getAttribute("id")||node.id}}function morphdomFactory(morphAttrs){return function morphdom(fromNode,toNode,options){if(!options){options={}}if(typeof toNode==="string"){if(fromNode.nodeName==="#document"||fromNode.nodeName==="HTML"||fromNode.nodeName==="BODY"){var toNodeHtml=toNode;toNode=doc.createElement("html");toNode.innerHTML=toNodeHtml}else{toNode=toElement(toNode)}}else if(toNode.nodeType===DOCUMENT_FRAGMENT_NODE$1){toNode=toNode.firstElementChild}var getNodeKey=options.getNodeKey||defaultGetNodeKey;var onBeforeNodeAdded=options.onBeforeNodeAdded||noop;var onNodeAdded=options.onNodeAdded||noop;var onBeforeElUpdated=options.onBeforeElUpdated||noop;var onElUpdated=options.onElUpdated||noop;var onBeforeNodeDiscarded=options.onBeforeNodeDiscarded||noop;var onNodeDiscarded=options.onNodeDiscarded||noop;var onBeforeElChildrenUpdated=options.onBeforeElChildrenUpdated||noop;var skipFromChildren=options.skipFromChildren||noop;var addChild=options.addChild||function(parent,child){return parent.appendChild(child)};var childrenOnly=options.childrenOnly===true;var fromNodesLookup=Object.create(null);var keyedRemovalList=[];function addKeyedRemoval(key){keyedRemovalList.push(key)}function walkDiscardedChildNodes(node,skipKeyedNodes){if(node.nodeType===ELEMENT_NODE){var curChild=node.firstChild;while(curChild){var key=undefined;if(skipKeyedNodes&&(key=getNodeKey(curChild))){addKeyedRemoval(key)}else{onNodeDiscarded(curChild);if(curChild.firstChild){walkDiscardedChildNodes(curChild,skipKeyedNodes)}}curChild=curChild.nextSibling}}}function removeNode(node,parentNode,skipKeyedNodes){if(onBeforeNodeDiscarded(node)===false){return}if(parentNode){parentNode.removeChild(node)}onNodeDiscarded(node);walkDiscardedChildNodes(node,skipKeyedNodes)}function indexTree(node){if(node.nodeType===ELEMENT_NODE||node.nodeType===DOCUMENT_FRAGMENT_NODE$1){var curChild=node.firstChild;while(curChild){var key=getNodeKey(curChild);if(key){fromNodesLookup[key]=curChild}indexTree(curChild);curChild=curChild.nextSibling}}}indexTree(fromNode);function handleNodeAdded(el){onNodeAdded(el);var curChild=el.firstChild;while(curChild){var nextSibling=curChild.nextSibling;var key=getNodeKey(curChild);if(key){var unmatchedFromEl=fromNodesLookup[key];if(unmatchedFromEl&&compareNodeNames(curChild,unmatchedFromEl)){curChild.parentNode.replaceChild(unmatchedFromEl,curChild);morphEl(unmatchedFromEl,curChild)}else{handleNodeAdded(curChild)}}else{handleNodeAdded(curChild)}curChild=nextSibling}}function cleanupFromEl(fromEl,curFromNodeChild,curFromNodeKey){while(curFromNodeChild){var fromNextSibling=curFromNodeChild.nextSibling;if(curFromNodeKey=getNodeKey(curFromNodeChild)){addKeyedRemoval(curFromNodeKey)}else{removeNode(curFromNodeChild,fromEl,true)}curFromNodeChild=fromNextSibling}}function morphEl(fromEl,toEl,childrenOnly){var toElKey=getNodeKey(toEl);if(toElKey){delete fromNodesLookup[toElKey]}if(!childrenOnly){var beforeUpdateResult=onBeforeElUpdated(fromEl,toEl);if(beforeUpdateResult===false){return}else if(beforeUpdateResult instanceof HTMLElement){fromEl=beforeUpdateResult;indexTree(fromEl)}morphAttrs(fromEl,toEl);onElUpdated(fromEl);if(onBeforeElChildrenUpdated(fromEl,toEl)===false){return}}if(fromEl.nodeName!=="TEXTAREA"){morphChildren(fromEl,toEl)}else{specialElHandlers.TEXTAREA(fromEl,toEl)}}function morphChildren(fromEl,toEl){var skipFrom=skipFromChildren(fromEl,toEl);var curToNodeChild=toEl.firstChild;var curFromNodeChild=fromEl.firstChild;var curToNodeKey;var curFromNodeKey;var fromNextSibling;var toNextSibling;var matchingFromEl;outer:while(curToNodeChild){toNextSibling=curToNodeChild.nextSibling;curToNodeKey=getNodeKey(curToNodeChild);while(!skipFrom&&curFromNodeChild){fromNextSibling=curFromNodeChild.nextSibling;if(curToNodeChild.isSameNode&&curToNodeChild.isSameNode(curFromNodeChild)){curToNodeChild=toNextSibling;curFromNodeChild=fromNextSibling;continue outer}curFromNodeKey=getNodeKey(curFromNodeChild);var curFromNodeType=curFromNodeChild.nodeType;var isCompatible=undefined;if(curFromNodeType===curToNodeChild.nodeType){if(curFromNodeType===ELEMENT_NODE){if(curToNodeKey){if(curToNodeKey!==curFromNodeKey){if(matchingFromEl=fromNodesLookup[curToNodeKey]){if(fromNextSibling===matchingFromEl){isCompatible=false}else{fromEl.insertBefore(matchingFromEl,curFromNodeChild);if(curFromNodeKey){addKeyedRemoval(curFromNodeKey)}else{removeNode(curFromNodeChild,fromEl,true)}curFromNodeChild=matchingFromEl;curFromNodeKey=getNodeKey(curFromNodeChild)}}else{isCompatible=false}}}else if(curFromNodeKey){isCompatible=false}isCompatible=isCompatible!==false&&compareNodeNames(curFromNodeChild,curToNodeChild);if(isCompatible){morphEl(curFromNodeChild,curToNodeChild)}}else if(curFromNodeType===TEXT_NODE||curFromNodeType==COMMENT_NODE){isCompatible=true;if(curFromNodeChild.nodeValue!==curToNodeChild.nodeValue){curFromNodeChild.nodeValue=curToNodeChild.nodeValue}}}if(isCompatible){curToNodeChild=toNextSibling;curFromNodeChild=fromNextSibling;continue outer}if(curFromNodeKey){addKeyedRemoval(curFromNodeKey)}else{removeNode(curFromNodeChild,fromEl,true)}curFromNodeChild=fromNextSibling}if(curToNodeKey&&(matchingFromEl=fromNodesLookup[curToNodeKey])&&compareNodeNames(matchingFromEl,curToNodeChild)){if(!skipFrom){addChild(fromEl,matchingFromEl)}morphEl(matchingFromEl,curToNodeChild)}else{var onBeforeNodeAddedResult=onBeforeNodeAdded(curToNodeChild);if(onBeforeNodeAddedResult!==false){if(onBeforeNodeAddedResult){curToNodeChild=onBeforeNodeAddedResult}if(curToNodeChild.actualize){curToNodeChild=curToNodeChild.actualize(fromEl.ownerDocument||doc)}addChild(fromEl,curToNodeChild);handleNodeAdded(curToNodeChild)}}curToNodeChild=toNextSibling;curFromNodeChild=fromNextSibling}cleanupFromEl(fromEl,curFromNodeChild,curFromNodeKey);var specialElHandler=specialElHandlers[fromEl.nodeName];if(specialElHandler){specialElHandler(fromEl,toEl)}}var morphedNode=fromNode;var morphedNodeType=morphedNode.nodeType;var toNodeType=toNode.nodeType;if(!childrenOnly){if(morphedNodeType===ELEMENT_NODE){if(toNodeType===ELEMENT_NODE){if(!compareNodeNames(fromNode,toNode)){onNodeDiscarded(fromNode);morphedNode=moveChildren(fromNode,createElementNS(toNode.nodeName,toNode.namespaceURI))}}else{morphedNode=toNode}}else if(morphedNodeType===TEXT_NODE||morphedNodeType===COMMENT_NODE){if(toNodeType===morphedNodeType){if(morphedNode.nodeValue!==toNode.nodeValue){morphedNode.nodeValue=toNode.nodeValue}return morphedNode}else{morphedNode=toNode}}}if(morphedNode===toNode){onNodeDiscarded(fromNode)}else{if(toNode.isSameNode&&toNode.isSameNode(morphedNode)){return}morphEl(morphedNode,toNode,childrenOnly);if(keyedRemovalList){for(var i=0,len=keyedRemovalList.length;i<len;i++){var elToRemove=fromNodesLookup[keyedRemovalList[i]];if(elToRemove){removeNode(elToRemove,elToRemove.parentNode,false)}}}}if(!childrenOnly&&morphedNode!==fromNode&&fromNode.parentNode){if(morphedNode.actualize){morphedNode=morphedNode.actualize(fromNode.ownerDocument||doc)}fromNode.parentNode.replaceChild(morphedNode,fromNode)}return morphedNode}}var morphdom=morphdomFactory(morphAttrs);return morphdom});</script>
+<script>
+// ---- tiny runtime: renders the template, diffs it into the page (so CSS transitions survive), wires clicks ----
+(function () {
+var TPL = "\n<div class=\"pg\" style=\"width: 100%; background: #F8F9FC; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #000; overflow-x: clip\">\n\n<section class=\"hero\" style=\"position: relative; height: 700px; margin: 0 auto\">\n<div class=\"hero-bg\" style=\"position: absolute; left: 0; right: 0; top: 0; bottom: -220px; z-index: -1; background: linear-gradient(90deg, rgba(255,255,255,0.16) 0px, rgba(255,255,255,0.09) 24px, rgba(255,255,255,0.035) 52px, rgba(255,255,255,0) 80px), linear-gradient(270deg, rgba(255,255,255,0.16) 0px, rgba(255,255,255,0.09) 24px, rgba(255,255,255,0.035) 52px, rgba(255,255,255,0) 80px), radial-gradient(60% 55% at var(--lx) var(--ly), rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 72%), radial-gradient(70% 60% at 100% 85%, rgba(255,248,242,0.75) 0%, rgba(255,248,242,0) 70%), radial-gradient(60% 55% at var(--hx) var(--hy), rgba(232,70,14,0.75) 0%, rgba(232,70,14,0) 75%), linear-gradient(165deg, #EC5A1C 0%, #F36C26 16%, #F88539 30%, #FB9D5B 44%, #FCB985 57%, #FDD3B4 69%, #FDE6D6 80%, #FBF2EC 90%, #F8F9FC 100%)\"><span class=\"hb-layer hb-blue\" aria-hidden=\"true\" style=\"background: linear-gradient(90deg, rgba(255,255,255,0.16) 0px, rgba(255,255,255,0.09) 24px, rgba(255,255,255,0.035) 52px, rgba(255,255,255,0) 80px), linear-gradient(270deg, rgba(255,255,255,0.16) 0px, rgba(255,255,255,0.09) 24px, rgba(255,255,255,0.035) 52px, rgba(255,255,255,0) 80px), radial-gradient(60% 55% at var(--lx) var(--ly), rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 72%), radial-gradient(70% 60% at 100% 85%, rgba(255,248,242,0.75) 0%, rgba(255,248,242,0) 70%), radial-gradient(60% 55% at var(--hx) var(--hy), rgba(30,62,190,0.7) 0%, rgba(30,62,190,0) 75%), linear-gradient(165deg, #3047C4 0%, #2E5BD6 16%, #3577E6 30%, #4B95F2 44%, #6DB0F6 57%, #9CCBF9 69%, #C8E3FB 80%, #E8F2FD 90%, #F8F9FC 100%)\"></span><span class=\"hb-layer hb-violet\" aria-hidden=\"true\" style=\"background: linear-gradient(90deg, rgba(255,255,255,0.16) 0px, rgba(255,255,255,0.09) 24px, rgba(255,255,255,0.035) 52px, rgba(255,255,255,0) 80px), linear-gradient(270deg, rgba(255,255,255,0.16) 0px, rgba(255,255,255,0.09) 24px, rgba(255,255,255,0.035) 52px, rgba(255,255,255,0) 80px), radial-gradient(60% 55% at var(--lx) var(--ly), rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 72%), radial-gradient(70% 60% at 100% 85%, rgba(255,248,242,0.75) 0%, rgba(255,248,242,0) 70%), radial-gradient(60% 55% at var(--hx) var(--hy), rgba(84,32,190,0.7) 0%, rgba(84,32,190,0) 75%), linear-gradient(165deg, #5B2FC9 0%, #6A3FD6 16%, #7C55E3 30%, #9473EE 44%, #AE95F4 57%, #C9B8F8 69%, #E0D6FB 80%, #F0EBFD 90%, #F8F9FC 100%)\"></span></div>\n<header class=\"sb\" style=\"position: absolute; top: 16px; left: calc(50% - 520px); right: calc(50% - 520px); display: flex; justify-content: space-between; align-items: center; color: #fff; text-transform: uppercase; text-shadow: 0 1px 2px rgba(0,0,0,0.16)\">\n<div style=\"display: flex; align-items: center; gap: 10px\">\n<svg class=\"sb-logo\" width=\"23\" height=\"20\" viewBox=\"0 0 23 20\" fill=\"none\" aria-hidden=\"true\" style=\"width: 23px; height: 20px; display: block; overflow: visible; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.16))\"><path d=\"M20.5395 5.9349L20.6136 5.94992L20.7183 5.98898C20.82 6.03894 20.9094 6.1218 20.9599 6.24514C21.0199 6.39152 21.0033 6.54503 20.9704 6.66957C20.9096 6.90005 20.7511 7.13824 20.5425 7.3772L20.5417 7.37795C19.3811 8.69688 18.0886 9.89278 16.6655 10.9649L16.6648 10.9642C15.2651 12.0334 13.9292 12.9419 12.6568 13.688L12.6553 13.6895C9.88644 15.2881 7.28869 16.382 4.86324 16.9632L4.85426 16.9655C4.61673 17.0148 4.383 17.0123 4.15847 16.9512C3.73992 16.8373 3.364 16.5732 3.02725 16.191L3.01827 16.1805C2.70999 15.7972 2.45928 15.3792 2.26711 14.9275L2.26412 14.9215L2.26188 14.9147C2.09262 14.4611 1.99848 14.0544 2.00002 13.7045L2.00077 13.6903L2.00151 13.6767L2.0277 13.401L2.03069 13.3763L2.03668 13.3522C2.06806 13.2334 2.13259 13.095 2.26786 13.0067C2.41015 12.9138 2.56688 12.9169 2.69282 12.9511C2.8629 12.9974 3.02389 13.1013 3.17314 13.2305C3.32399 13.3612 3.48027 13.5332 3.64223 13.7398L3.72079 13.8292C3.9112 14.0295 4.1538 14.1719 4.45698 14.2544C5.05438 14.4169 5.91092 14.3631 7.0561 14.0441C8.20441 13.7105 9.63092 13.1381 11.3371 12.3223C14.1134 10.9874 16.8417 9.02197 19.5212 6.41942L19.5227 6.41867C19.7003 6.24821 19.882 6.11351 20.0674 6.03631C20.2068 5.96836 20.3723 5.9133 20.5395 5.9349ZM4.37693 14.5519C4.49179 14.5831 4.61384 14.6059 4.74278 14.6225C4.6612 14.612 4.58231 14.599 4.50636 14.5827L4.37693 14.5519Z\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" fill=\"white\"/><path d=\"M2.6397 3.64149C2.77532 3.60536 2.91762 3.62705 3.03697 3.65952C3.19359 3.70214 3.33621 3.75792 3.45819 3.83004C4.29058 4.28207 4.98946 4.79663 5.54855 5.37601C6.03908 5.88438 6.44901 6.4768 6.77928 7.15033L6.91619 7.44405L6.91769 7.44856C7.09014 7.85551 7.10894 8.29225 6.98951 8.74512C6.9178 9.01693 6.79896 9.26261 6.63189 9.47829L6.62665 9.48581L6.62067 9.49257C6.40076 9.74441 6.10169 9.95347 5.75205 9.8584C5.52918 9.79772 5.36166 9.64509 5.24031 9.45275C5.12124 9.26392 5.03716 9.02275 4.9777 8.74588L4.97696 8.74512C4.8612 8.20243 4.60503 7.56202 4.19588 6.82131L4.19363 6.8183C3.7951 6.07609 3.28753 5.40927 2.66962 4.81787C2.55458 4.7132 2.45722 4.59822 2.38607 4.47307L2.37934 4.46105L2.37335 4.44903C2.31067 4.31124 2.2661 4.14247 2.31125 3.97127C2.35482 3.80639 2.47506 3.6855 2.6397 3.64149ZM4.27219 4.69542C4.40983 4.79246 4.54276 4.89064 4.66946 4.99214L4.42406 4.80284C4.37454 4.76624 4.32322 4.73142 4.27219 4.69542Z\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" fill=\"white\"/><path d=\"M5.91066 1.0093C6.03881 0.986311 6.17642 1.00922 6.29821 1.04235C6.41071 1.07296 6.51405 1.11123 6.60496 1.15653L6.60571 1.15578C7.36131 1.52488 8.06285 2.02567 8.71029 2.65517L8.9482 2.8903C9.47445 3.42961 9.85957 3.959 10.0906 4.47833L10.1812 4.66838C10.3689 5.11555 10.3904 5.5993 10.2567 6.10617C10.2243 6.22907 10.1869 6.33884 10.1468 6.42918L10.1475 6.42994C10.0633 6.67291 9.91667 6.87203 9.70684 7.01286L9.70759 7.01362C9.51713 7.14305 9.29581 7.19977 9.06417 7.13681C8.73709 7.04777 8.54964 6.78207 8.4604 6.46524L8.45965 6.46299C8.2874 5.83364 7.97346 5.10164 7.51023 4.26574L7.50724 4.26048C7.06726 3.42413 6.57558 2.7576 6.03635 2.25478L6.03261 2.25103C5.87718 2.10151 5.75047 1.95829 5.66601 1.8236C5.58913 1.70094 5.50558 1.52048 5.55678 1.3263C5.57827 1.24499 5.62331 1.16705 5.69519 1.10695C5.76436 1.04916 5.84224 1.0216 5.91066 1.0093Z\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" fill=\"white\"/></svg>\n<span style=\"font-size: 15px; font-weight: 600; line-height: 20px\"><span class=\"lr\">Андрей Балашов</span><span class=\"le\">Andrey Balashov</span></span>\n</div>\n<div style=\"display: flex; align-items: center; gap: 20px; font-size: 12px; font-weight: 600; line-height: 16px\">\n<div class=\"sb-item sb-hov sb-lang\" tabindex=\"0\" aria-label=\"{{ t.langAria }}\">\n<span class=\"lang-badge\">{{ langBadge }}</span><span class=\"sb-langname\">{{ langName }}</span>\n<span class=\"sb-tip sb-menu\" role=\"menu\"><button type=\"button\" role=\"menuitemradio\" aria-checked=\"{{ isEn }}\" onClick=\"{{ setEn }}\" class=\"{{ enCls }}\"><span class=\"lang-badge\">EN</span>English</button><button type=\"button\" role=\"menuitemradio\" aria-checked=\"{{ isRu }}\" onClick=\"{{ setRu }}\" class=\"{{ ruCls }}\"><span class=\"lang-badge\">РУ</span>Русский</button></span>\n</div>\n<div class=\"sb-item sb-hov sb-x\" tabindex=\"0\" style=\"display: flex; align-items: center; gap: 6px\">\n<span>{{ battText }}</span>\n<svg width=\"24\" height=\"16\" viewBox=\"0 0 24 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display: block; overflow: visible; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.16))\"><path d=\"M17.5563 2C19.1718 2 20.4815 3.29488 20.4815 4.89219V11.1078C20.4815 12.7051 19.1718 14 17.5563 14H2.92526C1.30968 14 0 12.7051 0 11.1078V4.89219C0 3.29488 1.30968 2 2.92526 2H17.5563ZM2.92526 3.5C2.14758 3.5 1.51715 4.1233 1.51715 4.89219V11.1078C1.51715 11.8767 2.14758 12.5 2.92526 12.5H17.5563C18.3339 12.5 18.9644 11.8767 18.9644 11.1078V4.89219C18.9644 4.1233 18.334 3.5 17.5563 3.5H2.92526Z\" fill=\"#fff\" fill-opacity=\"0.48\"></path><path d=\"M21.5132 10.25C23.4956 9.38487 23.4956 6.61513 21.5132 5.75V10.25Z\" fill=\"#fff\" fill-opacity=\"0.48\"></path><rect x=\"2.545\" y=\"4.575\" width=\"{{ battW }}\" height=\"6.85\" rx=\"0.85\" fill=\"#fff\"></rect></svg>\n<span class=\"sb-tip\" aria-hidden=\"true\">{{ battHint }}</span>\n</div>\n<div class=\"sb-item sb-hov sb-x\" style=\"display: flex; align-items: center\" tabindex=\"0\" aria-label=\"{{ t.wifi }}\">\n<img src=\"/assets/15b56e13-wifi.svg\" alt=\"\" style=\"width: 16px; height: 16px; display: block\">\n<span class=\"sb-tip\" aria-hidden=\"true\">{{ t.wifi }}</span>\n</div>\n<div class=\"sb-item sb-hov sb-x\" tabindex=\"0\" style=\"display: flex; align-items: center\">\n<span>{{ clock }}</span>\n<span class=\"sb-tip sb-card\" aria-hidden=\"true\"><b class=\"ft-card-t\">{{ greet }}</b><span class=\"ft-card-p\">{{ myTime }}</span></span>\n</div>\n</div>\n</header>\n<div class=\"hero-card hero-v2\" style=\"position: relative; top: 96px; width: 1080px; height: 500px; margin: 0 auto; color: #fff; text-align: left\">\n<div class=\"hero-top\" style=\"display: flex; flex-direction: column; gap: 8px; padding: 24px 20px 0 20px; max-width: 640px; padding-top: 40px\">\n<div class=\"hero-chips\" aria-label=\"Tags\" style=\"padding-bottom: 4px; gap: 8px\"><span class=\"hc hc-open\" style=\"font-weight: 500; background: radial-gradient(70% 140% at 50% 50%, #FFFFFF 0%, #FFFFFF 100%); border-style: none; color: #EE5C1C\"><span class=\"hc-dot\" style=\"background: #EE5C1C\"></span><span class=\"lr\">Ищу работу</span><span class=\"le\">Open to work</span></span><span class=\"hc\" style=\"font-weight: 500; border-style: none; background-color: #FFFFFF33; color: rgba(255, 255, 255, 0.88)\"><span class=\"lr\">Финтех</span><span class=\"le\">Fintech</span></span><span class=\"hc\" style=\"font-weight: 500; border-style: none; background-color: #FFFFFF33; color: rgba(255, 255, 255, 0.88)\"><span class=\"lr\">Веб3</span><span class=\"le\">Web3</span></span><span class=\"hc\" style=\"font-weight: 500; border-style: none; background-color: #FFFFFF33; color: rgba(255, 255, 255, 0.88)\"><span class=\"lr\">Дизайн-системы</span><span class=\"le\">Design Systems</span></span></div><h1 class=\"hero-h1\" style=\"margin: 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 88px; font-style: italic; font-weight: 500; line-height: 100px; letter-spacing: -1.5px; text-shadow: 0 2px 24px rgba(10,40,110,0.2); background-image: linear-gradient(180deg, #ffffff 63%, #FFFFFF 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; flex-grow: 0; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px\"><span class=\"lr\">Продуктовый дизайнер</span><span class=\"le\" style=\"font-weight: 500; font-style: italic\">Product designer</span></h1>\n<p class=\"hero-p\" style=\"margin: 0; width: 500px; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; line-height: 30px; color: #ffffff; font-weight: 300; font-style: normal\"><span class=\"lr\">Проектирую цифровые продукты и&nbsp;люблю сложные задачи.</span><span class=\"le\">I design digital products and love the tricky parts.</span> <span class=\"lr\">Мне нравится разбираться в&nbsp;деталях, проверять идеи на&nbsp;реальных данных и&nbsp;превращать запутанные сценарии в&nbsp;продукты, которыми людям действительно приятно пользоваться.</span><span class=\"le\">Digging into details, testing ideas with real data, turning messy flows into something people actually enjoy using.</span></p>\n\n</div>\n<div class=\"hero-tiles\" style=\"position: absolute; top: 24px; right: 20px; display: grid; gap: 20px\">\n<div class=\"wd\" data-wd=\"photo\">\n<div class=\"t-photo\" style=\"display: flex; flex-direction: column; align-items: center; gap: 10px; width: 180px\">\n<div class=\"ph\" style=\"position: relative; width: 180px; height: 180px; border-radius: 32px; overflow: hidden; background: #d9d9d9; user-select: none; -webkit-user-select: none\">\n<sc-for list=\"{{ slides }}\" as=\"p\" hint-placeholder-count=\"4\">\n<div style=\"position: absolute; left: 0; top: 0; width: 180px; height: 180px; overflow: hidden; transform: translateX({{ p.tx }}px); z-index: {{ p.z }}; visibility: {{ p.vis }}; transition: {{ p.tr }}; box-shadow: {{ p.edge }}; will-change: transform; pointer-events: none\">\n<img src=\"{{ p.src }}\" alt=\"{{ p.alt }}\" draggable=\"false\" style=\"display: block; width: 180px; height: 180px; object-fit: cover\">\n<span style=\"position: absolute; inset: 0; background: #000; opacity: {{ p.shade }}; transition: {{ p.trShade }}\"></span>\n</div>\n</sc-for>\n<span style=\"position: absolute; inset: 0; z-index: 99; border-radius: 32px; box-shadow: inset 0 0 1.5px rgba(0,0,0,0.4); pointer-events: none\"></span>\n<button type=\"button\" class=\"ph-ui\" onClick=\"{{ prev }}\" aria-label=\"Предыдущее фото\" style=\"position: absolute; left: 6px; top: 50%; z-index: 100; display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin-top: -16px; padding: 0; border: 0; border-radius: 999px; background: rgba(255,255,255,0.8); backdrop-filter: blur(8px); box-shadow: 0 1px 4px rgba(0,0,0,0.2); color: #000; cursor: pointer\">\n<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M10 3.5 5.5 8 10 12.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>\n</button>\n<button type=\"button\" class=\"ph-ui\" onClick=\"{{ next }}\" aria-label=\"Следующее фото\" style=\"position: absolute; right: 6px; top: 50%; z-index: 100; display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin-top: -16px; padding: 0; border: 0; border-radius: 999px; background: rgba(255,255,255,0.8); backdrop-filter: blur(8px); box-shadow: 0 1px 4px rgba(0,0,0,0.2); color: #000; cursor: pointer\">\n<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M6 3.5 10.5 8 6 12.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>\n</button>\n<div class=\"ph-ui\" style=\"position: absolute; left: 0; right: 0; bottom: 13px; z-index: 100; display: flex; justify-content: center; align-items: center; gap: 0\">\n<sc-for list=\"{{ photos }}\" as=\"p\" hint-placeholder-count=\"4\">\n<button type=\"button\" onClick=\"{{ p.pick }}\" aria-label=\"{{ p.label }}\" style=\"display: flex; align-items: center; justify-content: center; width: 12px; height: 12px; padding: 0; border: 0; background: transparent; cursor: pointer\">\n<span style=\"width: 6px; height: 6px; border-radius: 30px; background: {{ p.dot }}; box-shadow: {{ p.dotShadow }}; transition: background 0.3s ease, box-shadow 0.3s ease\"></span>\n</button>\n</sc-for>\n</div>\n</div>\n</div>\n</div>\n<div class=\"wd\" data-wd=\"map\">\n<div class=\"t-map\" style=\"width: 178px; height: 178px; border-radius: 32px; overflow: hidden; opacity: 1\">\n<img src=\"/assets/b64b69fe-map.webp\" alt=\"Карта: Белград\" style=\"display: block; width: 180px; height: 180px; margin: -1px; object-fit: cover\">\n</div>\n</div>\n<div class=\"wd wd-xp\" data-wd=\"xp\">\n<div class=\"t-xp\" style=\"position: relative; width: 178px; height: 178px; border-radius: 32px; border: 1px solid rgba(255,255,255,0.55); background: rgba(255,255,255,0.24); -webkit-backdrop-filter: blur(20px) saturate(1.4); backdrop-filter: blur(20px) saturate(1.4); box-shadow: 0 8px 32px rgba(16,50,130,0.18); color: #fff; text-transform: uppercase\">\n<span class=\"xp-l\" style=\"position: absolute; left: 19px; top: 19px; font-size: 13px; font-weight: 300; color: #EE5C1C\"><span class=\"lr\">Лет в&nbsp;дизайне</span><span class=\"le\">Years in design</span></span>\n<span class=\"xp-n xp-n-txt\">8</span>\n<span class=\"xp-u\" style=\"position: absolute; left: 73px; top: 138px; font-size: 16px; font-weight: 700; line-height: 21px\"><span class=\"lr\">лет</span><span class=\"le\" style=\"font-weight: 700\">years</span></span>\n</div>\n</div>\n<div class=\"wd wd-tools\" data-wd=\"tools\">\n<div class=\"t-tools\" aria-label=\"Tools\"><div class=\"tl-grid\"><span class=\"tl-app\" tabindex=\"0\" aria-label=\"Figma\"><span class=\"tl-face\"><svg class=\"tl-ico\" aria-hidden=\"true\" viewBox=\"30 30 260 260\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M30 119.6C30 88.2371 30 72.5556 36.1036 60.5765C41.4725 50.0395 50.0395 41.4725 60.5765 36.1036C72.5556 30 88.2371 30 119.6 30H200.4C231.763 30 247.444 30 259.423 36.1036C269.961 41.4725 278.527 50.0395 283.896 60.5765C290 72.5556 290 88.2371 290 119.6V200.4C290 231.763 290 247.444 283.896 259.423C278.527 269.961 269.961 278.527 259.423 283.896C247.444 290 231.763 290 200.4 290H119.6C88.2371 290 72.5556 290 60.5765 283.896C50.0395 278.527 41.4725 269.961 36.1036 259.423C30 247.444 30 231.763 30 200.4V119.6Z\" fill=\"#242424\"></path><path d=\"M30 119.6C30 88.2371 30 72.5556 36.1036 60.5765C41.4725 50.0395 50.0395 41.4725 60.5765 36.1036C72.5556 30 88.2371 30 119.6 30H200.4C231.763 30 247.444 30 259.423 36.1036C269.961 41.4725 278.527 50.0395 283.896 60.5765C290 72.5556 290 88.2371 290 119.6V200.4C290 231.763 290 247.444 283.896 259.423C278.527 269.961 269.961 278.527 259.423 283.896C247.444 290 231.763 290 200.4 290H119.6C88.2371 290 72.5556 290 60.5765 283.896C50.0395 278.527 41.4725 269.961 36.1036 259.423C30 247.444 30 231.763 30 200.4V119.6Z\" fill=\"url(#paint0_linear_4_10)\" fill-opacity=\"0.2\" style=\"mix-blend-mode: soft-light\"></path><path d=\"M30 119.6C30 88.2371 30 72.5556 36.1036 60.5765C41.4725 50.0395 50.0395 41.4725 60.5765 36.1036C72.5556 30 88.2371 30 119.6 30H200.4C231.763 30 247.444 30 259.423 36.1036C269.961 41.4725 278.527 50.0395 283.896 60.5765C290 72.5556 290 88.2371 290 119.6V200.4C290 231.763 290 247.444 283.896 259.423C278.527 269.961 269.961 278.527 259.423 283.896C247.444 290 231.763 290 200.4 290H119.6C88.2371 290 72.5556 290 60.5765 283.896C50.0395 278.527 41.4725 269.961 36.1036 259.423C30 247.444 30 231.763 30 200.4V119.6Z\" fill=\"#232323\"></path><path d=\"M30 119.6C30 88.2371 30 72.5556 36.1036 60.5765C41.4725 50.0395 50.0395 41.4725 60.5765 36.1036C72.5556 30 88.2371 30 119.6 30H200.4C231.763 30 247.444 30 259.423 36.1036C269.961 41.4725 278.527 50.0395 283.896 60.5765C290 72.5556 290 88.2371 290 119.6V200.4C290 231.763 290 247.444 283.896 259.423C278.527 269.961 269.961 278.527 259.423 283.896C247.444 290 231.763 290 200.4 290H119.6C88.2371 290 72.5556 290 60.5765 283.896C50.0395 278.527 41.4725 269.961 36.1036 259.423C30 247.444 30 231.763 30 200.4V119.6Z\" fill=\"url(#paint1_linear_4_10)\" fill-opacity=\"0.32\" style=\"mix-blend-mode: soft-light\"></path><g filter=\"url(#filter0_dii_4_10)\"><path d=\"M130 250C146.56 250 160 236.56 160 220V190H130C113.44 190 100 203.44 100 220C100 236.56 113.44 250 130 250Z\" fill=\"#10CF82\"></path><path d=\"M100 160C100 143.44 113.44 130 130 130H160V190H130C113.44 190 100 176.56 100 160Z\" fill=\"#A15AFE\"></path><path d=\"M100 100C100 83.44 113.44 70 130 70H160V130H130C113.44 130 100 116.56 100 100Z\" fill=\"#F24E1D\"></path><path d=\"M160 70H190C206.56 70 220 83.44 220 100C220 116.56 206.56 130 190 130H160V70Z\" fill=\"#FF7262\"></path><path d=\"M220 160C220 176.56 206.56 190 190 190C173.44 190 160 176.56 160 160C160 143.44 173.44 130 190 130C206.56 130 220 143.44 220 160Z\" fill=\"#1ABCFE\"></path></g><defs><filter id=\"filter0_dii_4_10\" x=\"76\" y=\"60\" width=\"168\" height=\"228\" filterUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\"><feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\"></feFlood><feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"></feColorMatrix><feOffset dy=\"14\"></feOffset><feGaussianBlur stdDeviation=\"12\"></feGaussianBlur><feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.0980392 0 0 0 0 0.0980392 0 0 0 0 0.172549 0 0 0 0.16 0\"></feColorMatrix><feBlend mode=\"normal\" in2=\"BackgroundImageFix\" result=\"effect1_dropShadow_4_10\"></feBlend><feBlend mode=\"normal\" in=\"SourceGraphic\" in2=\"effect1_dropShadow_4_10\" result=\"shape\"></feBlend><feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"></feColorMatrix><feOffset dy=\"-10\"></feOffset><feGaussianBlur stdDeviation=\"6\"></feGaussianBlur><feComposite in2=\"hardAlpha\" operator=\"arithmetic\" k2=\"-1\" k3=\"1\"></feComposite><feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.0980392 0 0 0 0 0.0980392 0 0 0 0 0.172549 0 0 0 0.32 0\"></feColorMatrix><feBlend mode=\"normal\" in2=\"shape\" result=\"effect2_innerShadow_4_10\"></feBlend><feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"></feColorMatrix><feOffset dy=\"-4\"></feOffset><feGaussianBlur stdDeviation=\"2\"></feGaussianBlur><feComposite in2=\"hardAlpha\" operator=\"arithmetic\" k2=\"-1\" k3=\"1\"></feComposite><feColorMatrix type=\"matrix\" values=\"0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.24 0\"></feColorMatrix><feBlend mode=\"normal\" in2=\"effect2_innerShadow_4_10\" result=\"effect3_innerShadow_4_10\"></feBlend></filter><linearGradient id=\"paint0_linear_4_10\" x1=\"160\" y1=\"30\" x2=\"160\" y2=\"290\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0.328125\" stop-color=\"white\"></stop><stop offset=\"1\" stop-color=\"#1B1A1A\"></stop></linearGradient><linearGradient id=\"paint1_linear_4_10\" x1=\"160\" y1=\"-276\" x2=\"160\" y2=\"290\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"white\" stop-opacity=\"0\"></stop><stop offset=\"0.950495\" stop-color=\"#1B1A1A\"></stop></linearGradient></defs></svg></span><span class=\"ft-tip ft-card tl-tip\" aria-hidden=\"true\"><b class=\"ft-card-t\">Figma</b><span class=\"ft-card-p\"><span class=\"lr\">Использую для проектирования интерфейсов и&nbsp;пользовательских сценариев</span><span class=\"le\">Using it to design interfaces and user flows</span></span></span></span><span class=\"tl-app\" tabindex=\"0\" aria-label=\"Claude\"><span class=\"tl-face\"><svg class=\"tl-ico\" aria-hidden=\"true\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\" shape-rendering=\"geometricPrecision\" text-rendering=\"geometricPrecision\" image-rendering=\"optimizeQuality\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" viewBox=\"0 0 512 509.64\"><defs><linearGradient id=\"tlClBg\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#2E2E2E\"></stop><stop offset=\"1\" stop-color=\"#141414\"></stop></linearGradient></defs><path fill=\"url(#tlClBg)\" d=\"M115.612 0h280.775C459.974 0 512 52.026 512 115.612v278.415c0 63.587-52.026 115.612-115.613 115.612H115.612C52.026 509.639 0 457.614 0 394.027V115.612C0 52.026 52.026 0 115.612 0z\"></path><path fill=\"#D97757\" fill-rule=\"nonzero\" d=\"M142.27 316.619l73.655-41.326 1.238-3.589-1.238-1.996-3.589-.001-12.31-.759-42.084-1.138-36.498-1.516-35.361-1.896-8.897-1.895-8.34-10.995.859-5.484 7.482-5.03 10.717.935 23.683 1.617 35.537 2.452 25.782 1.517 38.193 3.968h6.064l.86-2.451-2.073-1.517-1.618-1.517-36.776-24.922-39.81-26.338-20.852-15.166-11.273-7.683-5.687-7.204-2.451-15.721 10.237-11.273 13.75.935 3.513.936 13.928 10.716 29.749 23.027 38.848 28.612 5.687 4.727 2.275-1.617.278-1.138-2.553-4.271-21.13-38.193-22.546-38.848-10.035-16.101-2.654-9.655c-.935-3.968-1.617-7.304-1.617-11.374l11.652-15.823 6.445-2.073 15.545 2.073 6.547 5.687 9.655 22.092 15.646 34.78 24.265 47.291 7.103 14.028 3.791 12.992 1.416 3.968 2.449-.001v-2.275l1.997-26.641 3.69-32.707 3.589-42.084 1.239-11.854 5.863-14.206 11.652-7.683 9.099 4.348 7.482 10.716-1.036 6.926-4.449 28.915-8.72 45.294-5.687 30.331h3.313l3.792-3.791 15.342-20.372 25.782-32.227 11.374-12.789 13.27-14.129 8.517-6.724 16.1-.001 11.854 17.617-5.307 18.199-16.581 21.029-13.75 17.819-19.716 26.54-12.309 21.231 1.138 1.694 2.932-.278 44.536-9.479 24.062-4.347 28.714-4.928 12.992 6.066 1.416 6.167-5.106 12.613-30.71 7.583-36.018 7.204-53.636 12.689-.657.48.758.935 24.164 2.275 10.337.556h25.301l47.114 3.514 12.309 8.139 7.381 9.959-1.238 7.583-18.957 9.655-25.579-6.066-59.702-14.205-20.474-5.106-2.83-.001v1.694l17.061 16.682 31.266 28.233 39.152 36.397 1.997 8.999-5.03 7.102-5.307-.758-34.401-25.883-13.27-11.651-30.053-25.302-1.996-.001v2.654l6.926 10.136 36.574 54.975 1.895 16.859-2.653 5.485-9.479 3.311-10.414-1.895-21.408-30.054-22.092-33.844-17.819-30.331-2.173 1.238-10.515 113.261-4.929 5.788-11.374 4.348-9.478-7.204-5.03-11.652 5.03-23.027 6.066-30.052 4.928-23.886 4.449-29.674 2.654-9.858-.177-.657-2.173.278-22.37 30.71-34.021 45.977-26.919 28.815-6.445 2.553-11.173-5.789 1.037-10.337 6.243-9.2 37.257-47.392 22.47-29.371 14.508-16.961-.101-2.451h-.859l-98.954 64.251-17.618 2.275-7.583-7.103.936-11.652 3.589-3.791 29.749-20.474-.101.102.024.101z\"></path></svg></span><span class=\"ft-tip ft-card tl-tip\" aria-hidden=\"true\"><b class=\"ft-card-t\">Claude</b><span class=\"ft-card-p\"><span class=\"lr\">Использую для прототипов и&nbsp;исследований</span><span class=\"le\">Using it for prototyping and research</span></span></span></span><span class=\"tl-app\" tabindex=\"0\" aria-label=\"Framer\"><span class=\"tl-face\"><img class=\"tl-ico\" src=\"data:image/webp;base64,UklGRjQLAABXRUJQVlA4WAoAAAAQAAAApwAApwAAQUxQSH4FAAABGQWNpDi5Anz1LxhERPQ/BABmc2Cwtf0BSWSJ2rZj25bftm3byLZt27Zt27Zt27Zt2/Xq+f6+58x1pCs92Rr9GIUnnPH8cWfb1p3O2ZHtGtrX5BqGL9v6OLzCnUa23c+ICZiA3qK2vdM+6fkA6N8wRvW64Y1oaIMazAB+0Y++9CGlBAUUClWoKhSqUIUqVBUdvzASJEgQJEiQIEGAuJALCiGU53EuZ/XGMzqFUzu5kziNcwDQNw1GzHC1T9X5lRjCwq3bTuzDXgwO9fKNp3FcR3IER5SABgNnINonLzGsFdqOndqMZZnIOwAjoIB2SC9u2CECBNTR8gwOa5/248TQwAWAnUw1pRLT2ojNWaYPg/mCjIp6SZLuwBv3ZYcOhIUFsFOl88L8rMeqDAchoEquqLM0JODAtmBm9CsSrJ3CiTGt3JI4gidFnaa54pcbc2QNZLBmSBGLshTOkBR1PajPuSl/ar4skjVS5UgWqxtCQv0PCYfyjGP6RWmsEcZwN+QEETJUZ/KMPepPNNZAgVGMAFBIMSSs0+M/Hq0GwJNeBocgDX7j9ft47phCYQpRMlRvWK9fsAMk3ghCmgzVU96g7ABOplTIk5aWB+0hrHEip+UUCAwzHptbO6w6levCINKQvn5ChYGtmOa/QqwZ+3N2bi2I3JjrbJxSoea98dBKKI7jr24Qq6VDOJyPZ1IZfPuCQrTbVZJA/MXB7Z8HyYR0FF++WaRmviE4RKvYtHOi6ccPZhc0yyboXL+8WUzFxv28omzosQdz9cgeMAjX9A3fLvy3D/MgnZAOa/MGEtbk9BKlw3RuqxbLZ0DAhrU4Gptds3xy2p4dKB5WBflYdWjr0u1VyeRD/+FKPPcsnPKBxuUa2SCgAmJjdDdyg4ANDxwWKCHgarNCxIpZhyQjYHB/hcror3+FiBUD+4WMgI9/HCqj4mUQcuEyUniSEZDk5FLyJCaXklZSQgUVk5A1SQkupiv4//JA5iWd5MxLe5IzL2UnZ17KTs4UFMV0yWZe0knOFJOYSSld8pmUEkxKJqcgpSAnkxFhpYyAck5QQIqbvawrJKz48sf/IiO+o/gSKKLvNX4OCSsfWJ0GVEI2Dj0dETmmoKdECSkWKMz3JVBAuhjxpXNIiP6Q+NATEJDyZj2b5dFBvmovmkT0K8PF45zUrCzu3kUpHfWFoPfphbehCUdZTe3tKcQDUUjHrna1t2ssDuJLibJxnUpTmf3rBwCTjfkYurzMLHK32AfROB4Yy8QQi8N4nQbJUMdy55cBlmP5M6pglHN96e0JsNAsZt0vD3Ixfe7XXwaAlpvYiq5KqTiG9bSmAqSFZrr7NrgJReldn/YyAwAL+e0f/8y3UxAKvvyBRAIgQy6b5Sxd3CSi9qLbvF1bARhiVxzPUwAKhB8fV69GaI20HJ/4sv15sRulocSNUhGMaJW0WM74sh27XTJKA39Nmo1tgBbK5owvu8rWJJokCLBSbx9Dbs45Y2OrNsE9yIEJfzFVN6KdpMVm1xlf9ug1+HkKFAIx53xUQI1sR0sFQPzjH0gmAXP0eqSh9sbGfIfUhFq9Myj++LZEa6G1oFlOMx7Cg+AaWMcMjv/O+vNGNiNqTotMx7Rn/4UmM9YjWnDHfe/1bSAaCbA2pFnIZRVvtCPP64rkDMZ6Qgv0hPz5Wz/v7Y2YQys1Jy3kZmx0PairbNvjnghPrmzZQjtTJGlmRvXkKK/82+d0f2OR58ydCi1i+fZmZdfdmY168c4d3g/LQttE51rV3V2RuxzV7mzS9+/3rLIR316WIRjRKUnSQo5l164oylv9ckueslY/bzZphpYEFIB2FgiQwcziD999328fyG5dZUM++dU/+TF0LXTOt5cxZyM7BFZQOCCQBQAAMCgAnQEqqACoAD4xGIlDoiMKHOJWGAGCWkMsAlxxxMgMnN/CKfIIbmiSOy5fm/ObZ63zL/Mf+b3A/4//Xuph6HH6ciaa0C0Can/yXcBoWyUThGw9tOQqxtx1fnxamtshA+eK2bTtkrgzqJ2OlZCA4KaQYQP8D1vXy8+5uTxknHyXCiVnghA5ubptnelM+DwM07zGWP4PHMsA+pvU60dcIcZ8YZFzRrrIv2ZY5l7n7URFvHkwmQFTK4UVzNsDGDQ8uD13ogyIeazaQKTcSirXXQE3rrY7Hf5nusH2ash/KZVpTy7ewIn2VQA/0r9jUeszGpw4K0tmASKC31qT5GBGk7U/fkDk7ufeqm1xOagF9qy2Rf354YOj+TUNtrHq+gXG41E/PmtDZLWv2i7UM9ChL4KCwt6jLxGAPvwyZEcbB2HwedJ76JDSy1gAAP7/2LpGRaISjEKyp7rpiaF6r8pfO1GC7d9KcN3Hs20Tf6aBOF7mxCps/a2cjO9gLb+YqSH9Zo9gSD9eqllFnt3DJFyA/EFFz9qs6f8okoUjKnKUSDSZLQvWWfqj5XaWmxEAm3WBvZrcfU0UDKzLHk/1b7Yh2W/S8Thiuuar2jYce9hgiGgD1eZXBhCmfKhLDqepnlfmh/59dcUtkjRBqFvP8aZZpS8aDo7xi7eYOsMmEMh/YOpfqn8em3mU12xMQ8MlERNn5UyM9yFvkRzXpSbvXa6QmybZCzGTgpw1D89FFCDY4dmV7PP9mq1hSud5Qf15v3/v+fxb/8m1gxl6TnhWm/8iAECXiR666cqSlmueTwF71hijTf7Yo3TeDzaUBSBjeFeiz22temA2lP36Y1CzleP9rZYnCyzZF7axQXbJsnqixmdEHPMPgTPONIriy1rxMgFyvJHAEEA1UsulIUj7w9EmKO/0WYQOxxZNSGhyaApK5m2zHoLx7jHF9OR+GCtMDy58nySnLr8MFaYHlz14IlOiHFSpPY6r4LxSGUay90QsX7vQLjkP/T+JZzAh/l+Yvcg5n/0Nv/jn/69/7+5P7968M+4KxQLopTC9vN47m4WuLpKZV100bJyB4ZwcJ7on7DBEX8bU7f8T/jZW/hvwvc3/dKjKrVnXOaHkDB2IIGGXs4AT0rFqqH0cZI0XP8r417NHsbGEHVyi8ykXNXb2vNts5OBnlG27V/JNO5SqTtXyRDx/G3CVuX1XB1I/C91ys18MDFfe5v7nxtlHj5Z3oezlakuHVDT4FaGx88kOP9Hsj3Jtiq1dIlZqieXycgTlZzgVobHy5Fq4mSVUUEMaYW+xeoSrNav4irNtggC1E9HJfmbaMmaTC5XWrG8tnljxassi7tc2RerAP+2nLlYzJnVkAvse7mffWqiojbPc3ECyXYWStVYAOzRo5NQCx9/Npf57/7iWKAezflX/oZrlTU+c/o3J8xRXdsh+kQvlOesUR7dQxxbbJh3zDlkD1jaC/JgC86NwdcrmS5FrzfVNf86UU30bQs+wPF5dZrTTJfJ+luZbdOG96XclCKy31wNp0XfvR8IcPZWBEHnaw9ssFKWdh/zAxCfQrC8mppVNZb75pNlrKs5LyclYmidI33G9MdZv2WFjqZNwfYOxppx0zU5stuITg92aH6qdMrAX1OoTGdsTcdVN5UtburA+HE51Qmc+IQWabewQn9ZBrFSrZvu1WKIpwXTfTqPHnKX5bp2sXcOZdTS988/gj+qMKldxF6I9dQXa1efnfAQoBLpULq5EgveZnol8rRccOI/rlqnT6T1tHfecP1ysMB4SaLGMvaGW60T/7WwIyvGfAmL/sWSCbz3SkhmH6fzQjkIVmvEHGmkTkfpCs9/QDyasG2Iio05uK1pdR8dwEN7rr1vdpdgXvjqrp83G+zKsq5N0WGhgAAA=\" alt=\"\" draggable=\"false\"></span><span class=\"ft-tip ft-card tl-tip\" aria-hidden=\"true\"><b class=\"ft-card-t\">Framer</b><span class=\"ft-card-p\"><span class=\"lr\">Использую для создания веб-сайтов</span><span class=\"le\">Using it to build websites</span></span></span></span><span class=\"tl-app\" tabindex=\"0\" aria-label=\"Mobbin\"><span class=\"tl-face\"><img class=\"tl-ico\" src=\"data:image/webp;base64,UklGRqICAABXRUJQVlA4IJYCAACwGQCdASqoAKgAPikUiEMhoSESqZwMGAKEtLdwuPCN+cz5L6cf4Qfrd00/qNk9/r/4tftH/jNKr+MH4Z5in+3fkrqi/+S1gr+s/7TymfLR9Hf7D3BP4Z/IP9D/Yf3G7pPoR/rYHOHqxb3jYICPIkJpO8bBAR2sLZ6vFxDJS48Dm+Icpm9Hj1/NDxLpT6U4V4EEe+9iI+HjtWgd3sHkkV7db2d1xnBOMAqbUXoU3FplLV0/7OjqYBecU0xl3FQ4cSkhNJ3pgEBHkSE0neNggI8iQmk7xr1AAP7/yA4Aw+KKGgkY8c80jWJIlCe06zUR7GgF93+IWirRy4dpohRR8OcFv+Ub6jSSGLJ3jGW7TwFkbgAixVOaJQrsT+5ZXcqOtufymRlxL//hzizZi8fi8LIo3SnONlysJ2k/EMWa2FhB6Qo8K83g1HDkWMLXHFUuShPUW1SwbvtU4wZhEawOtdrjGSRmbrFkA4OS/BFk40wjqQeP/v4LbIYfOMcgA+Mk3ut0p0NIEbXeMXxlyv7cIWQ2ZhfGIE6Cq7+g8OjFQIgIuqcMfEoF/F+JzDrK3tOd/bUQ+uMtoCxZ2dK720lXZnrVwAM9OzwLP0CoBfb6wB8TKBjzuQxTR72etlRtMoxDFE5f7bqAi/ddpbEmaDEhUMnBaJRDTsnsUJcW3jl8dbR6qlpF+coJAsQAN8z3CL95TUblskNoSChpgHbVGuX/5jPb420mOK2qLlznme1281bkCpgibQvDXuZJl3dNSa7AQwn52UUZTUmhUuXuJEe+oATybF8YHV7ij2q88nrt3B9A3E0arATlSl32wzIBFRCexQyAduHyySfLvFbfeJIL+sjpqr2aOdf+/bChMUS2mBICH34AAAAAAA==\" alt=\"\" draggable=\"false\"></span><span class=\"ft-tip ft-card tl-tip\" aria-hidden=\"true\"><b class=\"ft-card-t\"><span class=\"lr\">Mobbin и&nbsp;другие</span><span class=\"le\">Mobbin and others</span></b><span class=\"ft-card-p\"><span class=\"lr\">Использую для вдохновения и&nbsp;поиска референсов</span><span class=\"le\">Using them for inspiration and references</span></span></span></span></div></div>\n</div>\n</div>\n</div>\n</section>\n\n<section class=\"sec s1\" style=\"position: relative; width: 1080px; margin: -31px auto 0 auto; padding-bottom: 107px\">\n<a href=\"https://www.parity.io/blog/playground-dot-what-190-people-built-on-polkadot-at-web3summit2026\" target=\"_blank\" rel=\"noopener\" class=\"pd zw\" aria-label=\"Подробнее: дизайн-система и приложения для Polkadot\" style=\"position: relative; display: block; height: 583px; color: inherit; text-decoration: none; cursor: pointer\">\n<img loading=\"lazy\" decoding=\"async\" class=\"pd-shot pd-chat\" src=\"/assets/b273b231-polkadot-chat.webp\" alt=\"Чат Polkadot Desktop\" style=\"position: absolute; left: 4px; top: 57px; width: 716px; height: auto; display: block\">\n<img loading=\"lazy\" decoding=\"async\" class=\"pd-shot pd-ds\" src=\"/assets/c9b1be59-polkadot-design-system.webp\" alt=\"Дизайн-токены Polkadot\" style=\"position: absolute; left: 198px; top: 99px; width: 683px; height: auto; display: block\">\n<img loading=\"lazy\" decoding=\"async\" class=\"pd-shot pd-mob\" src=\"/assets/e4870443-polkadot-mobile-ui.webp\" alt=\"Мобильное приложение Polkadot, выбор темы\" style=\"position: absolute; left: 817px; top: 60px; width: 263px; height: auto; display: block\">\n<span class=\"mw-t\" style=\"position: absolute; left: 35px; top: 22px; transform: rotate(-3.66deg); font-family: 'Bradley Hand', 'Caveat', cursive; font-weight: 700; font-size: 22px; line-height: 28px; color: rgba(0,0,0,0.24); white-space: nowrap\"><span class=\"lr\">Мои работы</span><span class=\"le\">My work</span></span>\n<svg class=\"mw-a\" aria-hidden=\"true\" viewBox=\"0 0 41 37\" fill=\"none\" style=\"position: absolute; left: 164px; top: 36px; width: 41px; height: 37px; overflow: visible; color: rgba(0,0,0,0.14)\"><path d=\"M3 5.5C11.5 5 21.5 8.5 28 15.5C31.6 19.4 33.9 24.6 35.2 31\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"></path><path d=\"M27.6 26.4C30.3 28.2 32.9 30.4 35.4 32.6C36.5 29.6 37.2 26.6 37.6 23.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>\n<span class=\"case-label\" aria-hidden=\"true\" style=\"top: 265px\"><span class=\"lr\">Подробнее</span><span class=\"le\">Read more</span></span>\n</a>\n<div style=\"display: flex; flex-direction: column; align-items: center; text-align: center\"><a href=\"https://www.parity.io/blog/playground-dot-what-190-people-built-on-polkadot-at-web3summit2026\" target=\"_blank\" rel=\"noopener\" class=\"blk\" tabindex=\"-1\" style=\"display: flex; flex-direction: column; align-items: center; color: inherit; text-decoration: none; cursor: pointer\">\n\n<div style=\"display: flex; gap: 8px\">\n<span class=\"yr\">2026</span>\n</div><h2 style=\"margin: 16px 0 0 0; font-size: 32px; font-weight: 500; line-height: 42px\"><span class=\"lr\">Дизайн система и&nbsp;приложения для&nbsp;Polkadot</span><span class=\"le\">Design system and apps for&nbsp;Polkadot</span></h2>\n<p style=\"margin: 12px 0 0 0; width: 700px; max-width: 100%; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; line-height: 28px\"><span class=\"lr\">Участвовал в&nbsp;запуске Polkadot App и&nbsp;Polkadot Desktop. Спроектировал настройки приватности и&nbsp;разрешений десктоп приложения. Систематизировал UX/UI мобильного чата со&nbsp;всеми корнер кейсами и&nbsp;состояниями. Отвечал за&nbsp;дизайн-систему: 50+ компонентов, 400+ токенов, 120+ иконок и&nbsp;5&nbsp;цветовых тем. Успешно выпустили MVP версии к&nbsp;Web3&nbsp;Summit 2026&nbsp;в&nbsp;срок.</span><span class=\"le\">Took part in launching Polkadot App and Polkadot Desktop. Designed the desktop app’s privacy and permission settings. Systematized the UX/UI of the mobile chat with all its edge cases and states. Owned the design system: 50+ components, 400+ tokens, 120+ icons and 5 color themes. We shipped the MVP on time for Web3&nbsp;Summit&nbsp;2026.</span></p>\n</a></div>\n</section>\n\n<section class=\"sec s2\" style=\"position: relative; width: 1080px; margin: 59px auto 0 auto; padding: 24px 0 138px 0\">\n<a href=\"https://novawalletapp.medium.com/nova-wallet-review-the-best-mobile-wallet-for-polkadot-120d7a1d5604\" target=\"_blank\" rel=\"noopener\" class=\"nv\" aria-label=\"Подробнее: дизайн приложения Nova Wallet\" style=\"position: relative; display: block; color: inherit; text-decoration: none; cursor: pointer; width: 1080px; height: 501px\">\n<div class=\"nv-inner\" style=\"position: relative; width: 1080px; height: 501px; border-radius: 32px; overflow: hidden; background: #d9d9d9\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/85d7c66b-nova-best-wallet.webp\" alt=\"Nova Wallet — лучший мобильный кошелёк для Polkadot\" style=\"display: block; width: 1080px; height: 501px; object-fit: cover\">\n<div style=\"position: absolute; inset: 0; border-radius: 32px; box-shadow: inset 0 0 1.5px rgba(0,0,0,0.4); pointer-events: none\"></div>\n<span class=\"case-label\" aria-hidden=\"true\" style=\"top: 227px\"><span class=\"lr\">Подробнее</span><span class=\"le\">Read more</span></span>\n</div>\n</a>\n<div style=\"display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 48px\"><a href=\"https://novawalletapp.medium.com/nova-wallet-review-the-best-mobile-wallet-for-polkadot-120d7a1d5604\" target=\"_blank\" rel=\"noopener\" class=\"blk\" tabindex=\"-1\" style=\"display: flex; flex-direction: column; align-items: center; color: inherit; text-decoration: none; cursor: pointer\">\n<span class=\"yr\">2021—2025</span>\n<h2 style=\"margin: 16px 0 0 0; font-size: 32px; font-weight: 500; line-height: 42px\"><span class=\"lr\">Дизайн приложения Nova Wallet</span><span class=\"le\">Nova Wallet app design</span></h2>\n<p style=\"margin: 12px 0 0 0; width: 700px; max-width: 100%; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; line-height: 28px\"><span class=\"lr\">Присоединился к&nbsp;проекту как&nbsp;первый дизайнер и&nbsp;с&nbsp;нуля спроектировал приложение для&nbsp;iOS и&nbsp;Android. Отвечал за&nbsp;развитие интерфейсов, целостность продукта и&nbsp;дизайн-систему.</span><span class=\"le\">Joined as the first designer and designed the iOS and Android app from scratch. Owned the evolution of the interface, product consistency and the design system.</span></p>\n</a><div class=\"stores\" style=\"display: flex; gap: 16px; margin-top: 32px\">\n<a href=\"https://apps.apple.com/us/app/nova-polkadot-wallet/id1597119355\" target=\"_blank\" rel=\"noopener\" class=\"store-btn\" aria-label=\"Скачать в App Store\" style=\"display: block; width: 180px; height: 52px; border-radius: 999px; text-decoration: none; cursor: pointer\"><span class=\"store-inner\" style=\"display: flex; align-items: center; justify-content: center; gap: 8px; box-sizing: border-box; width: 180px; height: 52px; padding: 0 20px 2px 20px; border-radius: 999px; color: #fff; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 18px; font-weight: 400; line-height: 28px; text-decoration: none; white-space: nowrap\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/f3797259-apple.svg\" alt=\"\" style=\"display: block; width: 24px; height: 24px; margin-top: 2px\"><span>App Store</span></span></a>\n<a href=\"https://play.google.com/store/apps/details?id=io.novafoundation.nova.market\" target=\"_blank\" rel=\"noopener\" class=\"store-btn\" aria-label=\"Скачать в Google Play\" style=\"display: block; width: 180px; height: 52px; border-radius: 999px; text-decoration: none; cursor: pointer\"><span class=\"store-inner\" style=\"display: flex; align-items: center; justify-content: center; gap: 10px; box-sizing: border-box; width: 180px; height: 52px; padding: 0 20px 2px 20px; border-radius: 999px; color: #fff; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 18px; font-weight: 400; line-height: 28px; text-decoration: none; white-space: nowrap\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/b44440cd-google-play.svg\" alt=\"\" style=\"display: block; width: 24px; height: 24px; margin-top: 2px\"><span>Google Play</span></span></a>\n</div>\n</div>\n<div class=\"cards\" style=\"display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; margin-top: 114px\">\n\n<div class=\"st cd\" style=\"position: relative; height: 978px; box-sizing: border-box; border-radius: 48px; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.04); overflow: hidden\">\n<a href=\"/staking.html\" aria-label=\"Посмотреть кейс: стейкинг в Nova Wallet\" style=\"position: absolute; inset: 0; z-index: 1; border-radius: 48px; cursor: pointer\"></a>\n<div class=\"cd-vis cd-ph\" style=\"position: absolute; left: 50%; top: 8px; transform: translateX(-50%); width: 405px; height: 774px\">\n<div class=\"st-phone\" style=\"position: relative; width: 405px; height: 774px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/c6d1572c-phone-staking-clean.webp\" alt=\"\" style=\"position: absolute; left: 0; top: 0; width: 405px; height: 774px; display: block\">\n<video src=\"/assets/1214d6dc-staking.mp4\" poster=\"/assets/dab01119-staking-poster.webp\" muted=\"\" loop=\"\" playsinline=\"\" preload=\"none\" data-lazy=\"1\" aria-hidden=\"true\" style=\"position: absolute; left: 50px; top: 60px; width: 305px; height: 666px; border-radius: 42px; object-fit: cover; display: block; background: #000\"></video>\n<span style=\"position: absolute; left: 153px; top: 69px; width: 100px; height: 29px; border-radius: 15px; background: #000\"></span>\n<span aria-hidden=\"true\" style=\"position: absolute; left: 50px; top: 700px; width: 305px; height: 26px; border-radius: 0 0 42px 42px; background: linear-gradient(rgba(6,9,25,0), #060919 55%); pointer-events: none\"></span>\n</div>\n</div>\n<span class=\"case-label cl-st\" aria-hidden=\"true\" style=\"top: 372px\"><span class=\"lr\">Посмотреть кейс</span><span class=\"le\">View case</span></span>\n<div class=\"cd-txt\" style=\"position: absolute; left: 23px; top: 791px; width: 472px\">\n<h3 style=\"margin: 0; font-size: 28px; font-weight: 500; line-height: 36px\"><span class=\"lr\">Стейкинг</span><span class=\"le\">Staking</span></h3>\n<p style=\"margin: 12px 0 0 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 22px\"><span class=\"lr\">Спроектировал стейкинг с&nbsp;нуля, а&nbsp;затем упростил юзер флоу с&nbsp;6 до&nbsp;4&nbsp;шагов. К&nbsp;концу 2024 года через Нову застейкали более $68&nbsp;млн.</span><span class=\"le\">Designed staking from scratch, then cut the user flow from 6 steps to 4. By the end of 2024, users had staked over $68M through Nova.</span></p>\n<a href=\"https://novawalletapp.medium.com/nova-wallet-the-best-staking-app-2024-report-68f52c5267f1\" target=\"_blank\" rel=\"noopener\" class=\"chip-link\" style=\"position: relative; z-index: 2; display: inline-block; margin-top: 16px; border-radius: 999px; text-decoration: none; cursor: pointer\"><span class=\"chip-inner\" style=\"display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px 2px 12px; border-radius: 999px; color: #0070D6; font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"chip-txt\">Nova Wallet: The Best Staking App&nbsp;— 2024&nbsp;Report</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M6 3.5 10.5 8 6 12.5\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></span></a>\n</div>\n</div>\n\n<div class=\"cd\" style=\"position: relative; height: 978px; box-sizing: border-box; border-radius: 48px; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.04); overflow: hidden\">\n<div class=\"cd-vis cd-ph\" style=\"position: absolute; left: 50%; top: 8px; transform: translateX(-50%); width: 405px; height: 774px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/fc6e6697-phone-dapp-clean.webp\" alt=\"\" style=\"position: absolute; left: 0; top: 0; width: 405px; height: 774px; display: block\">\n<video src=\"/assets/124e70a1-dapp.mp4\" poster=\"/assets/49370924-dapp-poster.webp\" muted=\"\" loop=\"\" playsinline=\"\" preload=\"none\" data-lazy=\"1\" aria-label=\"Запись экрана: DApp-браузер Nova Wallet\" style=\"position: absolute; left: 50px; top: 60px; width: 305px; height: 666px; border-radius: 42px; object-fit: cover; display: block; background: #000\"></video>\n<span style=\"position: absolute; left: 153px; top: 69px; width: 100px; height: 29px; border-radius: 15px; background: #000\"></span>\n</div>\n<div class=\"cd-txt\" style=\"position: absolute; left: 23px; top: 791px; width: 472px\">\n<h3 style=\"margin: 0; font-size: 28px; font-weight: 500; line-height: 36px\"><span class=\"lr\">DApp-браузер</span><span class=\"le\">DApp browser</span></h3>\n<p style=\"margin: 12px 0 0 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 22px\"><span class=\"lr\">Упростил поиск, навигацию и&nbsp;переключение между приложениями и&nbsp;функционалом Новы. Добавил баннеры для&nbsp;продвижения проектов экосистемы.</span><span class=\"le\">Simplified search, navigation and switching between apps and Nova features. Added banners to promote ecosystem projects.</span></p>\n<a href=\"https://novawalletapp.medium.com/48-000-wallets-one-year-how-nova-shots-onboarded-esports-fans-to-polkadot-d5d752b3971f\" target=\"_blank\" rel=\"noopener\" class=\"chip-link\" style=\"position: relative; z-index: 2; display: inline-block; margin-top: 16px; border-radius: 999px; text-decoration: none; cursor: pointer\"><span class=\"chip-inner\" style=\"display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px 2px 12px; border-radius: 999px; color: #0070D6; font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"chip-txt\">How Nova Shots Onboarded Esports Fans to Polkadot</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M6 3.5 10.5 8 6 12.5\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></span></a>\n</div>\n</div>\n\n<div class=\"cd\" style=\"position: relative; height: 960px; box-sizing: border-box; border-radius: 48px; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.04); overflow: hidden\">\n<div class=\"cd-vis cd-ph\" style=\"position: absolute; left: 50%; top: 8px; transform: translateX(-50%); width: 405px; height: 774px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/06abc58d-phone-swap-clean.webp\" alt=\"\" style=\"position: absolute; left: 0; top: 0; width: 405px; height: 774px; display: block\">\n<video src=\"/assets/787ec77c-swap.mp4\" poster=\"/assets/05b6b779-swap-poster.webp\" muted=\"\" loop=\"\" playsinline=\"\" preload=\"none\" data-lazy=\"1\" aria-label=\"Запись экрана: обмен токенов в Nova Wallet\" style=\"position: absolute; left: 50px; top: 60px; width: 305px; height: 666px; border-radius: 42px; object-fit: cover; display: block; background: #000\"></video>\n<span style=\"position: absolute; left: 153px; top: 69px; width: 100px; height: 29px; border-radius: 15px; background: #000\"></span>\n</div>\n<div class=\"cd-txt\" style=\"position: absolute; left: 23px; top: 791px; width: 472px\">\n<h3 style=\"margin: 0; font-size: 28px; font-weight: 500; line-height: 36px\"><span class=\"lr\">Обмен токенов</span><span class=\"le\">Token swaps</span></h3>\n<p style=\"margin: 12px 0 0 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 22px\"><span class=\"lr\">Добавил возможность обмена между разными сетями с&nbsp;автоматическим построением маршрута, избавив пользователей от&nbsp;ручных переводов и&nbsp;переходов в&nbsp;сторонние приложения.</span><span class=\"le\">Added cross-chain swaps with automatic routing, so users no longer need manual transfers or third-party apps.</span></p>\n</div>\n</div>\n\n<div class=\"cd\" style=\"position: relative; height: 960px; box-sizing: border-box; border-radius: 48px; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.04); overflow: hidden\">\n<div class=\"cd-vis cd-ph\" style=\"position: absolute; left: 50%; top: 8px; transform: translateX(-50%); width: 405px; height: 774px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/b72a85e4-phone-governance-clean.webp\" alt=\"\" style=\"position: absolute; left: 0; top: 0; width: 405px; height: 774px; display: block\">\n<video src=\"/assets/8fa69342-governance.mp4\" poster=\"/assets/c8c9eced-governance-poster.webp\" muted=\"\" loop=\"\" playsinline=\"\" preload=\"none\" data-lazy=\"1\" aria-label=\"Запись экрана: голосование Governance в Nova Wallet\" style=\"position: absolute; left: 50px; top: 60px; width: 305px; height: 666px; border-radius: 42px; object-fit: cover; display: block; background: #000\"></video>\n<span style=\"position: absolute; left: 153px; top: 69px; width: 100px; height: 29px; border-radius: 15px; background: #000\"></span>\n</div>\n<div class=\"cd-txt\" style=\"position: absolute; left: 23px; top: 791px; width: 472px\">\n<h3 style=\"margin: 0; font-size: 28px; font-weight: 500; line-height: 36px\">Governance</h3>\n<p style=\"margin: 12px 0 0 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 22px\"><span class=\"lr\">Добавил функционал просмотра референдумов, голосование и&nbsp;делегирование голосов. Сделал интерфейс более интуитивным, добавил контекстные подсказками и&nbsp;пояснения сложных механик.</span><span class=\"le\">Added referendum browsing, voting and vote delegation. Made the interface more intuitive with contextual hints and explanations of complex mechanics.</span></p>\n</div>\n</div>\n\n<div class=\"cd\" style=\"position: relative; height: 850px; box-sizing: border-box; border-radius: 48px; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.04); overflow: hidden\">\n<div role=\"img\" class=\"cd-vis cd-stage\" aria-label=\"Состояния подключения Ledger в Nova Wallet: Ledger Stax, Ledger Flex, Nano X и Nano S Plus\" style=\"position: absolute; left: -1px; top: -1px; width: 520px; height: 680px; overflow: hidden; border-radius: 40px 40px 0 0; background: radial-gradient(130% 100% at 50% 0%, #283563 0%, #171C42 55%, #0E112F 77%, #05071C 100%)\">\n<sc-for list=\"{{ ledgerSheets }}\" as=\"s\" hint-placeholder-count=\"4\">\n<div aria-hidden=\"true\" style=\"position: absolute; left: 72.5px; top: 80px; width: 375px; height: 458px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; border-radius: 36px 36px 20px 20px; background-color: {{ s.bg }}; opacity: {{ s.op }}; z-index: {{ s.z }}; transform: translateX({{ s.tx }}px) scale({{ s.scale }}); transition: {{ s.tr }}; font-family: 'Public Sans', 'IBM Plex Sans', system-ui, sans-serif; color: rgba(255,255,255,0.88)\">\n<div style=\"display: flex; justify-content: center; width: 100%; height: 16px; padding-top: 6px; box-sizing: border-box\"><span style=\"width: 36px; height: 5px; border-radius: 3px; background: rgba(255,255,255,0.24)\"></span></div>\n<div style=\"display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 16px 0 8px 0\">\n<div style=\"width: 210px; height: 190px\"><img loading=\"lazy\" decoding=\"async\" src=\"{{ s.img }}\" alt=\"\" style=\"display: block; width: 210px; height: auto\"></div>\n<div style=\"display: flex; flex-direction: column; gap: 8px; width: 343px; text-align: center\">\n<span style=\"font-size: 20px; font-weight: 600; line-height: 24px\">{{ s.title }}</span>\n<span style=\"height: 54px; font-size: 13px; line-height: 18px; color: rgba(255,255,255,0.48)\">{{ s.sub }}</span>\n</div>\n</div>\n<sc-if value=\"{{ s.buttons }}\" hint-placeholder-val=\"{{ true }}\">\n<div style=\"display: flex; gap: 16px; width: 343px; padding: 16px 0\">\n<span style=\"flex: 1 1 0; height: 52px; border-radius: 12px; background: rgba(153,158,199,0.16); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600\">Cancel</span>\n<span style=\"flex: 1 1 0; height: 52px; border-radius: 12px; background: #1F78FF; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600\">Retry</span>\n</div>\n</sc-if>\n<sc-if value=\"{{ s.address }}\" hint-placeholder-val=\"{{ false }}\">\n<div style=\"display: flex; align-items: center; justify-content: center; width: 343px; height: 84px; text-align: center; font-size: 13px; line-height: 18px; color: rgba(255,255,255,0.48); white-space: pre-line\">{{ s.addressText }}</div>\n</sc-if>\n<div style=\"position: relative; width: 100%; height: 34px; margin-top: auto\"><span style=\"position: absolute; left: 50%; bottom: 8px; width: 134px; height: 5px; margin-left: -67px; border-radius: 100px; background: #fff\"></span></div>\n</div>\n</sc-for>\n</div>\n<div class=\"cd-txt\" style=\"position: absolute; left: 23px; top: 703px; width: 472px\">\n<h3 style=\"margin: 0; font-size: 28px; font-weight: 500; line-height: 36px\"><span class=\"lr\">Интеграция Ledger</span><span class=\"le\">Ledger integration</span></h3><p style=\"margin: 12px 0 0 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 22px\"><span class=\"lr\">Отрисовал вручную иллюстрации Ledger девайсов. Продумал процесс подписание транзакций, предусмотрев все состояния и&nbsp;обработку ошибок.</span><span class=\"le\">Hand-drew the Ledger device illustrations. Designed the transaction signing flow, covering every state and error case.</span></p>\n\n</div>\n</div>\n\n<div class=\"cd\" style=\"position: relative; height: 850px; box-sizing: border-box; border-radius: 48px; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.04); overflow: hidden\">\n<div role=\"img\" class=\"cd-vis cd-stage\" aria-label=\"Анимация: список активов переключается с группировки по сетям на группировку по токенам, затем раскрывается DOT во всех сетях\" style=\"position: absolute; left: -1px; top: -1px; width: 520px; height: 680px; overflow: hidden; border-radius: 40px 40px 0 0; background: radial-gradient(130% 100% at 50% 0%, #283563 0%, #171C42 55%, #0E112F 77%, #05071C 100%); font-family: 'Public Sans', 'IBM Plex Sans', system-ui, sans-serif\">\n<div aria-hidden=\"true\" class=\"tk\" style=\"position: absolute; left: 40.24px; top: 84px; width: 439.52px; height: 520px\">\n<div style=\"position: relative; height: 41px\"><svg class=\"tk-ico\" width=\"30.75\" height=\"30.75\" viewBox=\"0 0 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" style=\"position: absolute; left: 0; top: 5.13px; display: block\"><rect class=\"tk-sq\" x=\"13.12\" y=\"4.37\" width=\"8.75\" height=\"8.75\" fill=\"#fff\"></rect><circle class=\"tk-ci\" cx=\"17.49\" cy=\"26.24\" r=\"4.37\" fill=\"#fff\"></circle></svg><div style=\"position: absolute; left: 30.75px; top: 0; right: 0; height: 41px; overflow: hidden\"><span class=\"tk-tn\" style=\"position: absolute; left: 0; top: 0; font-size: 25.63px; font-weight: 600; line-height: 41px; color: rgba(255,255,255,0.88)\">Networks</span><span class=\"tk-tt\" style=\"position: absolute; left: 0; top: 0; font-size: 25.63px; font-weight: 600; line-height: 41px; color: rgba(255,255,255,0.88)\">Tokens</span></div></div>\n<div class=\"tk-net\" style=\"position: absolute; left: 0; top: 52.74px; width: 100%; transform-origin: 50% 0\">\n<div style=\"display: flex; flex-direction: column; gap: 10.25px\">\n<div style=\"display: flex; flex-direction: column; gap: 10.25px; padding: 15.38px 0 10.25px 0; border-radius: 15.38px; background: rgba(153,158,199,0.1)\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; padding: 1.28px 20.5px 1.28px 15.38px\">\n<span style=\"display: flex; align-items: center; gap: 10.25px; height: 28.19px; padding-right: 10.25px; border-radius: 10.25px; background: rgba(153,158,199,0.16)\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/ac8fb2cf-net-ethereum.svg\" alt=\"\" style=\"display: block; width: 28.19px; height: 28.19px\"><span style=\"font-size: 14.1px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: rgba(255,255,255,0.48)\">Ethereum</span></span>\n<span style=\"font-size: 16.66px; line-height: 23.07px; color: rgba(255,255,255,0.48)\">$1,034.59</span>\n</div>\n<div style=\"display: flex; flex-direction: column\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; height: 71.76px; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/37cf3af4-token-eth.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\">\n<div style=\"display: flex; flex-direction: column\">\n<span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">ETH</span>\n<span style=\"display: flex; gap: 5.13px; font-size: 16.66px; line-height: 23.07px\"><span style=\"color: rgba(255,255,255,0.48)\">$1,869.18</span><span style=\"color: #2FC864\">+0.11%</span></span>\n</div>\n</div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\">\n<span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">0.5</span></span>\n<span style=\"font-size: 16.66px; line-height: 23.07px; color: rgba(255,255,255,0.48)\">$934.59</span>\n</div>\n</div>\n<div style=\"display: flex; align-items: center; justify-content: space-between; height: 71.76px; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/cb234d4e-token-dot.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\">\n<div style=\"display: flex; flex-direction: column\">\n<span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">DOT</span>\n<span style=\"display: flex; gap: 5.13px; font-size: 16.66px; line-height: 23.07px\"><span style=\"color: rgba(255,255,255,0.48)\">$1</span><span style=\"color: #2FC864\">+7.19%</span></span>\n</div>\n</div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\">\n<span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">100</span></span>\n<span style=\"font-size: 16.66px; line-height: 23.07px; color: rgba(255,255,255,0.48)\">$100</span>\n</div>\n</div>\n</div>\n</div>\n<div style=\"display: flex; flex-direction: column; gap: 10.25px; padding: 15.38px 0 10.25px 0; border-radius: 15.38px; background: rgba(153,158,199,0.1)\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; padding: 1.28px 20.5px 1.28px 15.38px\">\n<span style=\"display: flex; align-items: center; gap: 10.25px; height: 28.19px; padding-right: 10.25px; border-radius: 10.25px; background: rgba(153,158,199,0.16)\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/346f480d-net-polkadot.svg\" alt=\"\" style=\"display: block; width: 28.19px; height: 28.19px\"><span style=\"font-size: 14.1px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: rgba(255,255,255,0.48)\">Polkadot</span></span>\n\n</div>\n<div style=\"display: flex; flex-direction: column\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; height: 71.76px; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/cb234d4e-token-dot.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\">\n<div style=\"display: flex; flex-direction: column\">\n<span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">DOT</span>\n<span style=\"display: flex; gap: 5.13px; font-size: 16.66px; line-height: 23.07px\"><span style=\"color: rgba(255,255,255,0.48)\">$1</span><span style=\"color: #2FC864\">+7.19%</span></span>\n</div>\n</div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\">\n<span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">955</span><span style=\"font-size: 19.22px; font-weight: 600; line-height: 25.63px; color: rgba(255,255,255,0.48)\">.92592</span></span>\n<span style=\"font-size: 16.66px; line-height: 23.07px; color: rgba(255,255,255,0.48)\">$955.92</span>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"tk-all\" style=\"position: absolute; left: 0; top: 56.35px; width: 100%; transform-origin: 50% 0\">\n<div class=\"tk-dot\" style=\"position: absolute; left: 0; top: 0; width: 100%; transform-origin: 50% 0\">\n<div class=\"tk-ext\" style=\"position: absolute; overflow: hidden\">\n<div class=\"tk-rows\">\n<div style=\"position: absolute; left: 0; top: 10.28px; width: 100%; height: 65.93px; display: flex; align-items: center; justify-content: space-between; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/cb234d4e-token-dot.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\"><div style=\"display: flex; flex-direction: column\"><span style=\"font-size: 19.22px; line-height: 26.37px; color: rgba(255,255,255,0.88)\">DOT</span><span style=\"display: flex; align-items: center; gap: 5.13px; font-size: 15.38px; line-height: 21.1px; color: rgba(255,255,255,0.48)\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/346f480d-net-polkadot.svg\" alt=\"\" style=\"display: block; width: 15.38px; height: 15.38px; border-radius: 3.85px\">Polkadot</span></div></div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\"><span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 20.5px; font-weight: 600; line-height: 27.25px; color: rgba(255,255,255,0.88)\">800</span></span><span style=\"font-size: 15.38px; line-height: 21.1px; color: rgba(255,255,255,0.48)\">$800</span></div>\n</div>\n<div style=\"position: absolute; left: 0; top: 76.21px; width: 100%; height: 65.93px; display: flex; align-items: center; justify-content: space-between; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/cb234d4e-token-dot.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\"><div style=\"display: flex; flex-direction: column\"><span style=\"font-size: 19.22px; line-height: 26.37px; color: rgba(255,255,255,0.88)\">DOT</span><span style=\"display: flex; align-items: center; gap: 5.13px; font-size: 15.38px; line-height: 21.1px; color: rgba(255,255,255,0.48)\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/ac8fb2cf-net-ethereum.svg\" alt=\"\" style=\"display: block; width: 15.38px; height: 15.38px; border-radius: 3.85px\">Ethereum</span></div></div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\"><span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 20.5px; font-weight: 600; line-height: 27.25px; color: rgba(255,255,255,0.88)\">100</span></span><span style=\"font-size: 15.38px; line-height: 21.1px; color: rgba(255,255,255,0.48)\">$100</span></div>\n</div>\n<div style=\"position: absolute; left: 0; top: 143.02px; width: 100%; height: 65.93px; display: flex; align-items: center; justify-content: space-between; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/cb234d4e-token-dot.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\"><div style=\"display: flex; flex-direction: column\"><span style=\"font-size: 19.22px; line-height: 26.37px; color: rgba(255,255,255,0.88)\">DOT</span><span style=\"display: flex; align-items: center; gap: 5.13px; font-size: 15.38px; line-height: 21.1px; color: rgba(255,255,255,0.48)\"><svg width=\"15.38\" height=\"15.38\" viewBox=\"0 0 17.4927 17.4927\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display: block\"><path d=\"M0 4.37318C0 1.95794 1.95794 0 4.37318 0H13.1195C15.5348 0 17.4927 1.95794 17.4927 4.37318V13.1195C17.4927 15.5348 15.5348 17.4927 13.1195 17.4927H4.37318C1.95794 17.4927 0 15.5348 0 13.1195V4.37318Z\" fill=\"url(#tk-base-g)\"></path><path d=\"M15.3062 8.74641C15.3062 12.3693 12.3641 15.3062 8.73497 15.3062C5.29182 15.3062 2.46717 12.6626 2.18665 9.29781H10.8723V8.19501H2.18665C2.46717 4.83018 5.29182 2.18665 8.73497 2.18665C12.3641 2.18665 15.3062 5.12355 15.3062 8.74641Z\" fill=\"white\"></path><defs><linearGradient id=\"tk-base-g\" x1=\"17.4927\" y1=\"17.4927\" x2=\"0\" y2=\"0\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#1657F0\"></stop><stop offset=\"1\" stop-color=\"#5084F7\"></stop></linearGradient></defs></svg>Base</span></div></div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\"><span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 20.5px; font-weight: 600; line-height: 27.25px; color: rgba(255,255,255,0.88)\">55</span><span style=\"font-size: 18.0px; font-weight: 600; line-height: 27.25px; color: rgba(255,255,255,0.48)\">.92592</span></span><span style=\"font-size: 15.38px; line-height: 21.1px; color: rgba(255,255,255,0.48)\">$55.92</span></div>\n</div>\n</div>\n</div>\n<div class=\"tk-card\" style=\"position: relative; height: 82.01px; padding-top: 5.1px; box-sizing: border-box; background: rgba(153,158,199,0.1)\"><div style=\"display: flex; align-items: center; justify-content: space-between; height: 71.76px; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/cb234d4e-token-dot.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\"><div style=\"display: flex; flex-direction: column\"><span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">DOT</span><span style=\"display: flex; gap: 5.13px; font-size: 16.66px; line-height: 23.07px\"><span style=\"color: rgba(255,255,255,0.48)\">$1</span><span style=\"color: #2FC864\">+7.19%</span></span></div></div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\"><span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">955</span><span style=\"font-size: 19.22px; font-weight: 600; line-height: 25.63px; color: rgba(255,255,255,0.48)\">.92592</span></span><span style=\"font-size: 16.66px; line-height: 23.07px; color: rgba(255,255,255,0.48)\">$955.92</span></div>\n</div><div class=\"tk-div\" style=\"position: absolute; left: 0; right: 0; bottom: 0; height: 0.64px; background: rgba(153,158,199,0.16)\"></div></div>\n</div>\n<div class=\"tk-eth\" style=\"position: absolute; left: 0; top: 97.4px; width: 100%\">\n<div style=\"position: absolute; left: 16.7px; top: 82.01px; width: 398.56px; height: 5.1px; border-radius: 0 0 8px 8px; background: rgba(153,158,199,0.24)\"></div>\n<div style=\"position: relative; height: 82.01px; padding-top: 5.1px; box-sizing: border-box; border-radius: 15.38px; background: rgba(153,158,199,0.1)\"><div style=\"display: flex; align-items: center; justify-content: space-between; height: 71.76px; padding: 0 20.5px 0 15.38px; box-sizing: border-box\">\n<div style=\"display: flex; align-items: center; gap: 15.38px\"><img loading=\"lazy\" decoding=\"async\" src=\"/assets/37cf3af4-token-eth.svg\" alt=\"\" style=\"display: block; width: 51.26px; height: 51.26px\"><div style=\"display: flex; flex-direction: column\"><span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">ETH</span><span style=\"display: flex; gap: 5.13px; font-size: 16.66px; line-height: 23.07px\"><span style=\"color: rgba(255,255,255,0.48)\">$1,869.18</span><span style=\"color: #2FC864\">+0.11%</span></span></div></div>\n<div style=\"display: flex; flex-direction: column; align-items: flex-end\"><span style=\"display: flex; align-items: flex-end\"><span style=\"font-size: 21.78px; font-weight: 600; line-height: 28.19px; color: rgba(255,255,255,0.88)\">0.5</span></span><span style=\"font-size: 16.66px; line-height: 23.07px; color: rgba(255,255,255,0.48)\">$934.59</span></div>\n</div></div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"cd-txt\" style=\"position: absolute; left: 23px; top: 703px; width: 472px\">\n<h3 style=\"margin: 0; font-size: 28px; font-weight: 500; line-height: 36px\"><span class=\"lr\">Группировка списка токенов</span><span class=\"le\">Token list grouping</span></h3>\n<p style=\"margin: 12px 0 0 0; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 17px; line-height: 22px\"><span class=\"lr\">Проверил гипотезу, что&nbsp;пользователям важнее видеть токены, а&nbsp;не&nbsp;сети. Добавил новый способ группировки активов, упростив навигацию и&nbsp;поиск.</span><span class=\"le\">Tested the hypothesis that users care more about tokens than networks. Added a new way to group assets that made navigation and search simpler.</span></p>\n</div>\n</div>\n\n<div class=\"cd-more\" style=\"grid-column: span 2; height: 231px; box-sizing: border-box; padding: 23px; border-radius: 48px; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.04)\">\n<h3 style=\"margin: 0; font-size: 28px; font-weight: 500; line-height: 36px\"><span class=\"lr\">и&nbsp;много чего еще...</span><span class=\"le\">and much more...</span></h3>\n<div style=\"display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; max-width: 1032px\">\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Watch-only кошельки</span><span class=\"le\">Watch-only wallets</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Антискам сообщения</span><span class=\"le\">Anti-scam warnings</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Функционал дарение токенов</span><span class=\"le\">Token gifting</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Просмотр NFT</span><span class=\"le\">NFT viewer</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">График цены токенов</span><span class=\"le\">Token price charts</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">История операций (Мультичейн)</span><span class=\"le\">Multichain transaction history</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Экспорт кошельков</span><span class=\"le\">Wallet export</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Импорт кошельков из&nbsp;Trust Wallet</span><span class=\"le\">Import from Trust Wallet</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Миграция на&nbsp;Asset Hub</span><span class=\"le\">Asset Hub migration</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Покупка/Продажа токенов</span><span class=\"le\">Buy/sell crypto</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Адресная книга</span><span class=\"le\">Address book</span></span>\n<span style=\"padding: 2px 12px; border-radius: 999px; background: #fff; filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08)); font-size: 15px; font-weight: 500; line-height: 28px\"><span class=\"lr\">Уведомления об&nbsp;операциях</span><span class=\"le\">Transaction notifications</span></span>\n</div>\n</div>\n\n</div>\n</section>\n\n<section class=\"sec s3\" style=\"position: relative; width: 1080px; margin: 0 auto; padding-bottom: 94px\">\n<a href=\"https://novawallet.io/\" target=\"_blank\" rel=\"noopener\" class=\"pd zw\" aria-label=\"Посмотреть сайт Nova Wallet\" style=\"position: relative; display: block; height: 632px; color: inherit; text-decoration: none; cursor: pointer\">\n<img loading=\"lazy\" decoding=\"async\" class=\"pd-shot pd-chat\" src=\"/assets/86e4f6dc-nova-website-desktop-noshadow.webp\" alt=\"Сайт Nova Wallet, десктоп\" style=\"position: absolute; left: 20px; top: 75px; width: 842px; height: auto; display: block; filter: drop-shadow(0 5px 25px rgba(0,0,0,0.3))\">\n<img loading=\"lazy\" decoding=\"async\" class=\"pd-shot pd-mob\" src=\"/assets/054134ce-nova-website-mobile.webp\" alt=\"Сайт Nova Wallet, мобильная версия\" style=\"position: absolute; left: 764px; top: 54px; width: 283px; height: auto; display: block; filter: drop-shadow(0 5px 25px rgba(0,0,0,0.3))\">\n<span class=\"case-label\" aria-hidden=\"true\" style=\"top: 272px\"><span class=\"lr\">Посмотреть сайт</span><span class=\"le\">View website</span></span>\n</a>\n<div style=\"display: flex; flex-direction: column; align-items: center; text-align: center\"><a href=\"https://novawallet.io/\" target=\"_blank\" rel=\"noopener\" class=\"blk\" tabindex=\"-1\" style=\"display: flex; flex-direction: column; align-items: center; color: inherit; text-decoration: none; cursor: pointer\">\n<span class=\"yr\">2021—2025</span>\n<h2 style=\"margin: 16px 0 0 0; font-size: 32px; font-weight: 500; line-height: 42px\"><span class=\"lr\">Веб-сайт Nova Wallet</span><span class=\"le\">Nova Wallet website</span></h2>\n<p style=\"margin: 12px 0 0 0; width: 700px; max-width: 100%; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; line-height: 28px\"><span class=\"lr\">Отвечал за&nbsp;дизайн, запуск и&nbsp;развитие сайта Nova Wallet на&nbsp;Framer. Сделал более 12&nbsp;SEO-страниц, настроил CMS для&nbsp;блога и&nbsp;оптимизировал структуру сайта для&nbsp;поисковых систем. В&nbsp;результате сайт привлёк более 220,000&nbsp;органического трафика.</span><span class=\"le\">Owned the design, launch and growth of the Nova Wallet website on Framer. Built 12+ SEO pages, set up a CMS for the blog and optimized the site structure for search engines. The site has drawn over 220,000 organic visitors.</span></p>\n</a></div>\n</section>\n\n<section class=\"sec s4\" style=\"position: relative; width: 1080px; margin: 0 auto; padding: 24px 0 0 0\">\n<a href=\"https://www.figma.com/community/file/1039874427311142565/nova-assets-tokens-networks-dapps\" target=\"_blank\" rel=\"noopener\" class=\"nv\" aria-label=\"Открыть библиотеку Nova Assets в Figma\" style=\"position: relative; display: block; color: inherit; text-decoration: none; cursor: pointer; width: 1080px; height: 501px\">\n<div class=\"nv-inner\" style=\"position: relative; width: 1080px; height: 501px; border-radius: 32px; overflow: hidden; background: #d9d9d9\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/c5c19327-nova-assets.webp\" alt=\"Обложка Nova Assets\" style=\"display: block; width: 1080px; height: 501px; object-fit: cover\">\n<div style=\"position: absolute; inset: 0; border-radius: 32px; box-shadow: inset 0 0 1.5px rgba(0,0,0,0.4); pointer-events: none\"></div>\n<span class=\"case-label\" aria-hidden=\"true\" style=\"top: 227px\"><span class=\"lr\">Открыть в&nbsp;Figma</span><span class=\"le\">Open in Figma</span></span>\n</div>\n</a>\n<div style=\"display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 48px\"><a href=\"https://www.figma.com/community/file/1039874427311142565/nova-assets-tokens-networks-dapps\" target=\"_blank\" rel=\"noopener\" class=\"blk\" tabindex=\"-1\" style=\"display: flex; flex-direction: column; align-items: center; color: inherit; text-decoration: none; cursor: pointer\">\n<span class=\"yr\">2021—2025</span>\n<h2 style=\"margin: 16px 0 0 0; font-size: 32px; font-weight: 500; line-height: 42px\">Nova Assets</h2>\n<p style=\"margin: 12px 0 0 0; width: 700px; max-width: 100%; font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; line-height: 28px\"><span class=\"lr\">Собрал публичную библиотеку в&nbsp;Figma с&nbsp;иконками токенов, сетей и&nbsp;DApp-ов. Систематизировал работу с&nbsp;ассетами в&nbsp;дизайн-процессе, ускорив их подготовку и&nbsp;повысив визуальную консистентность продукта.</span><span class=\"le\">Built a public Figma library of token, network and DApp icons. Systematized how assets are handled in the design process, speeding up their preparation and improving the product’s visual consistency.</span></p>\n<div class=\"stats\" style=\"display: flex; gap: 40px; margin-top: 32px\">\n<div style=\"display: flex; align-items: center; gap: 8px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/25bfd64c-left-laurel.svg\" alt=\"\" style=\"width: 29px; height: 56px; display: block\">\n<div style=\"display: flex; flex-direction: column; align-items: center; gap: 2px\">\n<span style=\"font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; font-weight: 600; line-height: 28px\">3,600</span>\n<span style=\"font-size: 13px; font-weight: 500; line-height: 17px; color: rgba(0,0,0,0.56); text-transform: uppercase\"><span class=\"lr\">копий</span><span class=\"le\">copies</span></span>\n</div>\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/bc6d14f3-right-laurel.svg\" alt=\"\" style=\"width: 29px; height: 56px; display: block\">\n</div>\n<div style=\"display: flex; align-items: center; gap: 8px\">\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/25bfd64c-left-laurel.svg\" alt=\"\" style=\"width: 29px; height: 56px; display: block\">\n<div style=\"display: flex; flex-direction: column; align-items: center; gap: 2px\">\n<span style=\"font-family: 'IBM Plex Serif', Georgia, serif; font-size: 20px; font-weight: 600; line-height: 28px\">1,000+</span>\n<span style=\"font-size: 13px; font-weight: 500; line-height: 17px; color: rgba(0,0,0,0.56); text-transform: uppercase\"><span class=\"lr\">SVG иконок</span><span class=\"le\">SVG icons</span></span>\n</div>\n<img loading=\"lazy\" decoding=\"async\" src=\"/assets/bc6d14f3-right-laurel.svg\" alt=\"\" style=\"width: 29px; height: 56px; display: block\">\n</div>\n</div>\n</a></div>\n</section>\n\n<footer class=\"dock\" style=\"width: fit-content; margin: 80px auto 0 auto; padding-bottom: 16px; position: sticky; bottom: 0; z-index: 1000\">\n<svg width=\"0\" height=\"0\" aria-hidden=\"true\" style=\"position:absolute;width:0;height:0;overflow:hidden\"><filter id=\"lg-warp\" x=\"0\" y=\"0\" width=\"661\" height=\"88\" filterUnits=\"userSpaceOnUse\" primitiveUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\"><feImage href=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22661%22%20height%3D%2288%22%20viewBox%3D%220%200%20661%2088%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22r%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220.0000%22%20stop-color%3D%22rgb%280%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.0067%22%20stop-color%3D%22rgb%2848%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.0133%22%20stop-color%3D%22rgb%2886%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.0200%22%20stop-color%3D%22rgb%28110%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.0266%22%20stop-color%3D%22rgb%28123%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.0333%22%20stop-color%3D%22rgb%28128%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.9667%22%20stop-color%3D%22rgb%28127%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.9734%22%20stop-color%3D%22rgb%28132%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.9800%22%20stop-color%3D%22rgb%28145%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.9867%22%20stop-color%3D%22rgb%28169%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.9933%22%20stop-color%3D%22rgb%28207%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%221.0000%22%20stop-color%3D%22rgb%28255%2C0%2C0%29%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20x2%3D%220%22%20y1%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220.0000%22%20stop-color%3D%22rgb%280%2C0%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.0500%22%20stop-color%3D%22rgb%280%2C48%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.1000%22%20stop-color%3D%22rgb%280%2C86%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.1500%22%20stop-color%3D%22rgb%280%2C110%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.2000%22%20stop-color%3D%22rgb%280%2C123%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.2500%22%20stop-color%3D%22rgb%280%2C128%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.7500%22%20stop-color%3D%22rgb%280%2C127%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.8000%22%20stop-color%3D%22rgb%280%2C132%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.8500%22%20stop-color%3D%22rgb%280%2C145%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.9000%22%20stop-color%3D%22rgb%280%2C169%2C0%29%22%2F%3E%3Cstop%20offset%3D%220.9500%22%20stop-color%3D%22rgb%280%2C207%2C0%29%22%2F%3E%3Cstop%20offset%3D%221.0000%22%20stop-color%3D%22rgb%280%2C255%2C0%29%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22661%22%20height%3D%2288%22%20fill%3D%22%23000%22%2F%3E%3Crect%20width%3D%22661%22%20height%3D%2288%22%20fill%3D%22url%28%23r%29%22%2F%3E%3Crect%20width%3D%22661%22%20height%3D%2288%22%20fill%3D%22url%28%23g%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%3C%2Fsvg%3E\" x=\"0\" y=\"0\" width=\"661\" height=\"88\" preserveAspectRatio=\"none\" result=\"map\"></feImage><feDisplacementMap in=\"SourceGraphic\" in2=\"map\" scale=\"-46\" xChannelSelector=\"R\" yChannelSelector=\"G\" result=\"r0\"></feDisplacementMap><feColorMatrix in=\"r0\" type=\"matrix\" values=\"1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0\" result=\"rr\"></feColorMatrix><feDisplacementMap in=\"SourceGraphic\" in2=\"map\" scale=\"-40\" xChannelSelector=\"R\" yChannelSelector=\"G\" result=\"g0\"></feDisplacementMap><feColorMatrix in=\"g0\" type=\"matrix\" values=\"0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0\" result=\"gg\"></feColorMatrix><feDisplacementMap in=\"SourceGraphic\" in2=\"map\" scale=\"-34\" xChannelSelector=\"R\" yChannelSelector=\"G\" result=\"b0\"></feDisplacementMap><feColorMatrix in=\"b0\" type=\"matrix\" values=\"0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0\" result=\"bb\"></feColorMatrix><feBlend in=\"rr\" in2=\"gg\" mode=\"screen\" result=\"rg\"></feBlend><feBlend in=\"rg\" in2=\"bb\" mode=\"screen\"></feBlend></filter></svg>\n<nav class=\"lg\" style=\"display: flex; align-items: center; gap: 12px; padding: 16px; border-radius: 24px\">\n<div class=\"dock-scroll\">\n<a href=\"#\" class=\"ft-btn\" aria-label=\"Polkadot\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip ft-card\" aria-hidden=\"true\"><span class=\"ft-card-h\"><b class=\"ft-card-t\">Polkadot</b><span class=\"ft-card-d\">2026</span></span><span class=\"ft-card-r\"><span class=\"lr\">Продуктовый дизайнер · Novasama × Parity</span><span class=\"le\">Product Designer · Novasama × Parity</span></span><span class=\"ft-card-p\"><span class=\"lr\">Переделал чат в&nbsp;Polkadot App за&nbsp;3.5&nbsp;месяца, и&nbsp;команда успела выпустить MVP к&nbsp;Web3&nbsp;Summit. Параллельно собрал дизайн-систему с&nbsp;пятью цветовыми темами.</span><span class=\"le\">Redesigned the chat in Polkadot App in 3.5 months, and the team shipped the MVP in time for Web3&nbsp;Summit. Built a design system with five color themes along the way.</span></span></span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/3b0ce7e8-polkadot.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<a href=\"#\" class=\"ft-btn\" aria-label=\"Nova Wallet\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip ft-card\" aria-hidden=\"true\"><span class=\"ft-card-h\"><b class=\"ft-card-t\">Nova Wallet</b><span class=\"ft-card-d\">2021&nbsp;– 2026</span></span><span class=\"ft-card-r\"><span class=\"lr\">Продуктовый дизайнер в&nbsp;Novasama</span><span class=\"le\">Product Designer at Novasama</span></span><span class=\"ft-card-p\"><span class=\"lr\">Пришёл первым дизайнером и&nbsp;вёл приложение от&nbsp;нуля до&nbsp;100,000&nbsp;активных пользователей в&nbsp;месяц. Придумал название и&nbsp;логотип. После редизайна стейкинга через Нову к&nbsp;концу 2024 года застейкали более $68&nbsp;млн.</span><span class=\"le\">Joined as the first designer and grew the app from zero to 100,000 monthly active users. Came up with the name and logo. After the staking redesign, users staked over $68M through Nova by the end of 2024.</span></span></span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/ba3aedf8-nova.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<a href=\"#\" class=\"ft-btn\" aria-label=\"Soramitsu\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip ft-card\" aria-hidden=\"true\"><span class=\"ft-card-h\"><b class=\"ft-card-t\">Soramitsu</b><span class=\"ft-card-d\">2018&nbsp;– 2021</span></span><span class=\"ft-card-r\"><span class=\"lr\">UX/UI дизайнер</span><span class=\"le\">UX/UI Designer</span></span><span class=\"ft-card-p\"><span class=\"lr\">Проектировал десктоп-приложение для&nbsp;Московской биржи, платёжное приложение Byacco для&nbsp;японского университета и&nbsp;основные сценарии Fearless Wallet.</span><span class=\"le\">Designed a desktop app for the Moscow Exchange, the Byacco payment app for a Japanese university, and the core flows of Fearless Wallet.</span></span></span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/51ea66c3-soramitsu.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<a href=\"#\" class=\"ft-btn\" aria-label=\"Альфа-Банк\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip ft-card\" aria-hidden=\"true\"><span class=\"ft-card-h\"><b class=\"ft-card-t\"><span class=\"lr\">Альфа-Банк</span><span class=\"le\">Alfa-Bank</span></b><span class=\"ft-card-d\">2017&nbsp;– 2018</span></span><span class=\"ft-card-r\"><span class=\"lr\">Дизайнер интерфейсов</span><span class=\"le\">Interface Designer</span></span><span class=\"ft-card-p\"><span class=\"lr\">За&nbsp;полгода сделал дизайн 9&nbsp;внутренних приложений для&nbsp;сотрудников банка. Внедрил общую библиотеку компонентов, чтобы дизайн и&nbsp;разработка шли быстрее.</span><span class=\"le\">Designed 9 internal apps for bank employees in six months. Introduced a shared component library to speed up design and development.</span></span></span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/1adbf15c-alfa-bank.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<a href=\"#\" class=\"ft-btn\" aria-label=\"Другие работы\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip ft-card\" aria-hidden=\"true\"><span class=\"ft-card-h\"><b class=\"ft-card-t\"><span class=\"lr\">Гридли, ATN Labs</span><span class=\"le\">Gridly, ATN Labs</span></b><span class=\"ft-card-d\">2016&nbsp;– 2017</span></span><span class=\"ft-card-r\"><span class=\"lr\">Веб-дизайнер</span><span class=\"le\">Web Designer</span></span><span class=\"ft-card-p\"><span class=\"lr\">Делал сайты для&nbsp;Skyeng и&nbsp;Dodo Pizza, лендинг Формулы-1&nbsp;в&nbsp;Баку для&nbsp;Aviasales и&nbsp;интерфейсы для&nbsp;Mom.life. До&nbsp;этого был стажёром в&nbsp;ATN Labs.</span><span class=\"le\">Built websites for Skyeng and Dodo Pizza, a Formula&nbsp;1 Baku landing page for Aviasales, and interfaces for Mom.life. Before that, interned at ATN Labs.</span></span></span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/afa9dde0-folder.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<span style=\"display: block; width: 1px; height: 48px; margin: 0 8px; background: rgba(0,0,0,0.24)\"></span>\n<a href=\"https://www.linkedin.com/in/blshv/\" target=\"_blank\" rel=\"noopener\" class=\"ft-btn\" aria-label=\"LinkedIn\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip\" aria-hidden=\"true\">LinkedIn</span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/98f641ff-linkedin.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<a href=\"https://telegram.me/balshv\" target=\"_blank\" rel=\"noopener\" class=\"ft-btn\" aria-label=\"Telegram\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip\" aria-hidden=\"true\">Telegram</span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/7249c74a-tg.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<a href=\"mailto:awbalashov@gmail.com\" class=\"ft-btn\" aria-label=\"Почта: awbalashov@gmail.com\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip\" aria-hidden=\"true\"><span class=\"lr\">Почта</span><span class=\"le\">Email</span></span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/fd89ccb2-mail.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n<a href=\"{{ cvHref }}\" target=\"_blank\" rel=\"noopener\" class=\"ft-btn\" aria-label=\"Резюме (CV)\" style=\"position: relative; display: block; width: 56px; height: 56px; cursor: pointer\"><span class=\"ft-tip\" aria-hidden=\"true\"><span class=\"lr\">Резюме</span><span class=\"le\">Resume</span></span><img loading=\"lazy\" decoding=\"async\" src=\"/assets/23c1da8b-cv.svg\" alt=\"\" style=\"display: block; width: 56px; height: 56px\"></a>\n</div>\n<span class=\"lg-warp\" aria-hidden=\"true\"></span><span class=\"lg-frost\" aria-hidden=\"true\"></span><span class=\"lg-rim\" aria-hidden=\"true\"></span>\n</nav>\n</footer>\n\n</div>\n";
+function esc(v) { return String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+function get(ctx, p) { return p.split('.').reduce(function (o, k) { return o == null ? undefined : o[k]; }, ctx); }
+var handlers = [];
+function tpl(t, ctx) {
+  t = t.replace(/<sc-for list="\{\{ ([\w.]+) \}\}" as="(\w+)"[^>]*>([\s\S]*?)<\/sc-for>/g, function (m, l, as, inner) {
+    return (get(ctx, l) || []).map(function (it) { var c = Object.assign({}, ctx); c[as] = it; return tpl(inner, c); }).join('');
+  });
+  t = t.replace(/<sc-if value="\{\{ ([\w.]+) \}\}"[^>]*>([\s\S]*?)<\/sc-if>/g, function (m, v, inner) { return get(ctx, v) ? inner : ''; });
+  t = t.replace(/onClick="\{\{ ([\w.]+) \}\}"/g, function (m, p) { var f = get(ctx, p); handlers.push(f); return 'data-on="' + (handlers.length - 1) + '"'; });
+  return t.replace(/\{\{\s*([\w.]+)\s*\}\}/g, function (m, p) { var v = get(ctx, p); return typeof v === 'function' || v == null ? '' : esc(v); });
+}
+function DCLogic(props) { this.props = props || {}; }
+DCLogic.prototype.setState = function (o) { Object.assign(this.state, o); schedule(); };
+window.__SITE = {"lang":"en","alt":{"en":"/","ru":"/ru/"},"titles":{"en":"Andrey Balashov — Product Designer, open to new roles","ru":"Андрей Балашов — продуктовый дизайнер, открыт к предложениям"},"any":true};
+
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+// Parallax slider: slides are stacked; the incoming one slides over the current one,
+// which shifts a little in the same direction and darkens. pos is an unbounded counter, so it loops.
+this.photoList = [
+// bg = how bright the photo is where the dots sit (bottom centre): 'dark' gets light dots, 'light' gets dark dots
+{ src: '/assets/cc572e89-me.webp', alt: 'Андрей Балашов', bg: 'dark' },
+{ src: '/assets/c06c72f8-dogs.webp', alt: 'Мои собаки', bg: 'dark' },
+{ src: '/assets/306e9be4-basket.webp', alt: 'Баскетбол', bg: 'dark' }
+];
+this.W = 180;
+this.DURATION = 800;
+this.AUTOPLAY = 5000;
+this.PARALLAX = 0.3;
+this.MAX_SHADE = 0.55;
+// Ledger sheets auto-slider: the centre sheet slides out to the left and dims, the next one comes in from the right
+this.ledgerList = [
+{ img: '/assets/9916fcd7-ledger-stax.svg', title: 'Polkadot app not launched', sub: 'Open the Polkadot app on your Ledger device', buttons: true },
+{ img: '/assets/e58746c2-ledger-flex.svg', title: 'Review and Approve', sub: 'Press confirm button on your Ledger Flex 5A47 to approve the address', buttons: false },
+{ img: '/assets/207d5731-ledger-nanox.svg', title: 'Polkadot app not launched', sub: 'Open the Polkadot app on your Ledger device', buttons: true },
+{ img: '/assets/b9d77e24-ledger-nanosplus.svg', title: 'Review and Approve', sub: 'Press both buttons on your Nano S Plus E426 to approve the address', buttons: false }
+];
+this.LEDGER_GAP = 346;
+this.LEDGER_EVERY = 4000;
+let lang0 = 'en'; // English first; Russian only when chosen (remembered for both pages)
+try { const saved = localStorage.getItem('lang'); if (saved === 'ru' || saved === 'en') lang0 = saved; } catch (e) {}
+// on the published site the URL decides: / is English, /ru/ is Russian
+if (typeof window !== 'undefined' && window.__SITE) lang0 = window.__SITE.lang;
+this.state = { pos: 0, lpos: 0, lSettled: true, now: Date.now(), batt: null, charging: false, lang: lang0 };
+this.clockTimer = null;
+this.clockAlign = null;
+this.autoTimer = null;
+this.ledgerTimer = null;
+this.ledgerSettle = null;
+}
+componentDidMount() {
+this.startHero();
+this.setupLazyVideos();
+setTimeout(() => {
+document.querySelectorAll('video').forEach((v) => {
+v.muted = true;
+const p = v.play();
+if (p && p.catch) p.catch(() => {});
+});
+}, 0);
+this.setupResponsive();
+this.setupWidgets();
+this.setupHeroCenter();
+this.setupAnimSync();
+this.restartAuto();
+// live clock: tick on the minute boundary, then every minute
+this.clockAlign = setTimeout(() => {
+this.setState({ now: Date.now() });
+this.clockTimer = setInterval(() => this.setState({ now: Date.now() }), 60000);
+}, 60000 - (Date.now() % 60000) + 50);
+// visitor's battery (Chrome/Edge/Arc only); Safari and Firefox keep the 100% fallback
+if (typeof navigator !== 'undefined' && navigator.getBattery) {
+navigator.getBattery().then((b) => {
+const upd = () => this.setState({ batt: Math.round(b.level * 100), charging: !!b.charging });
+upd();
+b.addEventListener('levelchange', upd);
+b.addEventListener('chargingchange', upd);
+}).catch(() => {});
+}
+this.ledgerTimer = setInterval(() => {
+clearTimeout(this.ledgerSettle);
+this.setState({ lpos: this.state.lpos + 1, lSettled: false });
+// once the slide has finished, park the sheet that left on the far right, ready to come in next
+this.ledgerSettle = setTimeout(() => this.setState({ lSettled: true }), this.DURATION + 60);
+}, this.LEDGER_EVERY);
+}
+componentWillUnmount() {
+clearInterval(this.autoTimer);
+clearInterval(this.ledgerTimer);
+clearTimeout(this.ledgerSettle);
+clearTimeout(this.clockAlign);
+if (this.respCleanup) this.respCleanup();
+if (this.wdCleanup) this.wdCleanup();
+clearInterval(this.clockTimer);
+}
+restartAuto() {
+clearInterval(this.autoTimer);
+this.autoTimer = setInterval(() => {
+this.goTo(this.state.pos + 1);
+}, this.AUTOPLAY);
+}
+ledgerSheets() {
+const list = this.ledgerList;
+const n = list.length;
+const lpos = this.state.lpos;
+// slots: -1 left peek, 0 centre, 1 right peek; -2 = just left (fading out), 2 = parked on the right (hidden)
+const lo = this.state.lSettled ? -1 : -2;
+const ease = this.DURATION + 'ms cubic-bezier(0.22, 1, 0.36, 1)';
+return list.map((s, i) => {
+let d = ((i - lpos) % n + n) % n;
+if (d >= lo + n) d -= n;
+while (d < lo) d += n;
+if (d > lo + n - 1) d -= n;
+const shown = Math.abs(d) <= 1;
+const parked = d >= 2;
+return {
+img: s.img,
+title: s.title,
+sub: s.sub,
+buttons: s.buttons,
+address: !s.buttons,
+addressText: '5diaskvnaXwSfrynYF5a7kQX4U\nWMt7aFwD4FoWfuawDrougr',
+tx: d * this.LEDGER_GAP,
+scale: d === 0 ? 0.8667 : 0.8296,
+op: d === 0 ? 1 : (shown ? 0.6 : 0),
+bg: d === 0 ? 'rgba(71,74,94,0.37)' : '#181920',
+z: d === 0 ? 3 : (shown ? 2 : 1),
+tr: parked ? 'none' : 'transform ' + ease + ', opacity ' + ease + ', background-color ' + ease
+};
+});
+}
+// Responsive helpers (no React state, so nothing re-renders on resize):
+// 1) zoom factors for the fixed-size compositions, written as CSS variables on <html>;
+// 2) finger swipe on the photo slider;
+// 3) bottom sheet for the footer experience cards on touch / small screens.
+// macOS-like widgets in the hero: grab with the mouse and move anywhere inside the first block
+// Colour-flow animations share one clock: re-anchor them all to the document timeline,
+// so they never drift apart (tab hidden/restored, elements re-rendered later, etc.)
+// Entrance animation starts only once the hero photos + map are ready, so they appear already loaded
+startHero() {
+const root = document.documentElement;
+if (root.classList.contains('hero-ready')) return;
+const go = () => root.classList.add('hero-ready');
+const imgs = [...document.querySelectorAll('.hero-tiles img')];
+const ready = imgs.map(i => (i.complete && i.naturalWidth) ? Promise.resolve() : (i.decode ? i.decode().catch(() => {}) : new Promise(r => { i.onload = i.onerror = r; })));
+Promise.race([Promise.all(ready), new Promise(r => setTimeout(r, 1200))]).then(go);
+setTimeout(go, 2500);
+}
+// Phone videos load and play only when near the screen; paused when off-screen
+setupLazyVideos() {
+const vids = [...document.querySelectorAll('video[data-lazy]')];
+if (!vids.length) return;
+if (!('IntersectionObserver' in window)) { vids.forEach(v => { v.preload = 'auto'; v.play && v.play().catch(() => {}); }); return; }
+const io = new IntersectionObserver((es) => es.forEach(e => {
+const v = e.target;
+if (e.isIntersecting) { if (v.preload !== 'auto') { v.preload = 'auto'; v.load(); } const p = v.play(); if (p) p.catch(() => {}); }
+else if (!v.paused) v.pause();
+}), { rootMargin: '300px 0px' });
+vids.forEach(v => io.observe(v));
+}
+setupAnimSync() {
+if (!document.getAnimations) return;
+const names = new Set(['hbBlue', 'hbViolet', 'hbInk', 'hbDot', 'hbPastel']);
+const sync = () => { document.getAnimations().forEach(a => { if (names.has(a.animationName) && a.startTime !== 0) a.startTime = 0; }); };
+sync();
+document.addEventListener('visibilitychange', () => { if (!document.hidden) sync(); });
+window.addEventListener('focus', sync);
+window.addEventListener('pageshow', sync);
+setInterval(sync, 1500);
+}
+// Keep the left hero text vertically centred against the widget column, in any language
+setupHeroCenter() {
+const card = document.querySelector('.hero-v2');
+const tiles = card && card.querySelector('.hero-tiles');
+if (!card || !tiles) return;
+const upd = () => { document.documentElement.style.setProperty('--tiles-c', (tiles.offsetTop + tiles.offsetHeight / 2) + 'px'); };
+upd();
+if (window.ResizeObserver) new ResizeObserver(upd).observe(tiles);
+window.addEventListener('resize', upd);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(upd);
+}
+setupWidgets() {
+const area = document.querySelector('.hero');
+const items = Array.from(document.querySelectorAll('.hero-v2 .wd'));
+if (!area || !items.length) return;
+const mq = window.matchMedia('(min-width: 1120px) and (hover: hover)');
+const pos = new Map(items.map((w) => [w, { x: 0, y: 0 }]));
+let cur = null, sx = 0, sy = 0, ox = 0, oy = 0, moved = false, lim = null;
+const put = (w, x, y, extra) => { w.style.transform = 'translate(' + x + 'px,' + y + 'px)' + (extra || ''); };
+const down = (e) => {
+if (!mq.matches || e.pointerType !== 'mouse' || e.button !== 0) return;
+const w = e.target.closest && e.target.closest('.wd');
+if (!w || e.target.closest('button')) return;
+cur = w; moved = false; sx = e.clientX; sy = e.clientY;
+const p = pos.get(w); ox = p.x; oy = p.y;
+const a = area.getBoundingClientRect(), r = w.getBoundingClientRect();
+lim = { l: a.left + 8 - (r.left - ox), r: a.right - 8 - (r.right - ox), t: a.top + 64 - (r.top - oy), b: a.bottom - 8 - (r.bottom - oy) };
+e.preventDefault();
+};
+const move = (e) => {
+if (!cur) return;
+const dx = e.clientX - sx, dy = e.clientY - sy;
+if (!moved && Math.abs(dx) + Math.abs(dy) < 4) return;
+moved = true; cur.classList.add('drag');
+const x = Math.min(lim.r, Math.max(lim.l, ox + dx)), y = Math.min(lim.b, Math.max(lim.t, oy + dy));
+pos.set(cur, { x, y }); put(cur, x, y, ' scale(1.03)');
+};
+const up = () => {
+if (!cur) return;
+const p = pos.get(cur); cur.classList.remove('drag'); put(cur, p.x, p.y);
+if (moved) { const stop = (ev) => { ev.stopPropagation(); ev.preventDefault(); }; window.addEventListener('click', stop, { capture: true, once: true }); setTimeout(() => window.removeEventListener('click', stop, true), 0); }
+cur = null;
+};
+// back to the grid when the layout changes (tablet / phone)
+const reset = () => { if (!mq.matches) items.forEach((w) => { pos.set(w, { x: 0, y: 0 }); w.style.transform = ''; }); };
+area.addEventListener('pointerdown', down);
+window.addEventListener('pointermove', move);
+window.addEventListener('pointerup', up);
+mq.addEventListener('change', reset);
+this.wdCleanup = () => { area.removeEventListener('pointerdown', down); window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); mq.removeEventListener('change', reset); };
+}
+setupResponsive() {
+const root = document.documentElement;
+const apply = () => {
+const vw = root.clientWidth || window.innerWidth;
+const g = vw >= 1120 ? 20 : (vw >= 768 ? 32 : 16);
+const cw = Math.min(1080, vw - 2 * g);
+const desk = vw >= 1120;
+const zw = desk ? 1 : cw / 1080;
+const cardW = desk ? 520 : (vw >= 768 ? (cw - 24) / 2 : cw);
+const zc = desk ? 1 : cardW / 520;
+// mobile hero tiles fill the card: three in a row while each is 150+, else photo + map in a row
+const v2 = !!document.querySelector('.hero-v2');
+const inner = cw - (v2 ? 8 : 40);
+const three = (inner - 24) / 3 >= 150;
+const tab = v2 && vw >= 768 && vw < 1120;
+const tile = tab ? Math.min(180, (cw - 24 - 3 * 16) / 4) : vw >= 768 ? 180 : v2 ? 164 : (three ? (inner - 24) / 3 : (inner - 12) / 2);
+const zt = tile / 180;
+root.classList.toggle('tiles-3', vw < 768 && three && !v2);
+root.style.setProperty('--zx', (vw >= 768 && !tab ? 1 : tile / (v2 ? 180 : 178)).toFixed(4));
+root.style.setProperty('--zw', zw.toFixed(4));
+root.style.setProperty('--izw', (1 / zw).toFixed(4));
+root.style.setProperty('--zc', zc.toFixed(4));
+root.style.setProperty('--izc', (1 / zc).toFixed(4));
+root.style.setProperty('--zt', zt.toFixed(4));
+};
+apply();
+window.addEventListener('resize', apply);
+
+// photo slider swipe
+const ph = document.querySelector('.ph');
+let sx = null, sy = null;
+const ts = (e) => { const t = e.touches[0]; sx = t.clientX; sy = t.clientY; };
+const te = (e) => {
+if (sx == null) return;
+// in the sideways-scrolling widget row (mobile) a swipe scrolls the row, not the photos
+if (window.innerWidth < 768 && document.querySelector('.hero-v2')) { sx = null; return; }
+const t = e.changedTouches[0];
+const dx = t.clientX - sx, dy = t.clientY - sy;
+sx = null;
+if (Math.abs(dx) > 30 && Math.abs(dx) > Math.abs(dy)) {
+this.goTo(this.state.pos + (dx < 0 ? 1 : -1));
+this.restartAuto();
+}
+};
+if (ph) { ph.addEventListener('touchstart', ts, { passive: true }); ph.addEventListener('touchend', te, { passive: true }); }
+
+// bottom sheet
+const wrap = document.createElement('div');
+wrap.className = 'bs-wrap';
+wrap.innerHTML = '<div class="bs-back"></div><div class="bs-panel" role="dialog" aria-modal="true"><button type="button" class="bs-close" aria-label="Закрыть"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 2l10 10M12 2 2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="bs-body"></div></div>';
+document.body.appendChild(wrap);
+const body = wrap.querySelector('.bs-body');
+const panel = wrap.querySelector('.bs-panel');
+const close = () => { wrap.classList.remove('open'); root.style.overflow = ''; };
+wrap.querySelector('.bs-back').addEventListener('click', close);
+wrap.querySelector('.bs-close').addEventListener('click', close);
+let py = null;
+panel.addEventListener('touchstart', (e) => { py = e.touches[0].clientY; }, { passive: true });
+panel.addEventListener('touchend', (e) => { if (py != null && e.changedTouches[0].clientY - py > 60) close(); py = null; }, { passive: true });
+const onKey = (e) => { if (e.key === 'Escape') close(); };
+document.addEventListener('keydown', onKey);
+const mq = window.matchMedia('(max-width: 1119.98px), (hover: none)');
+const onClick = (e) => {
+// tools widget: tap an app icon → the same text as the desktop hint, in the sheet
+const app = e.target.closest && e.target.closest('.tl-app');
+if (app && mq.matches) {
+const tip = app.querySelector('.tl-tip'), face = app.querySelector('.tl-face');
+if (!tip) return;
+e.preventDefault();
+body.innerHTML = '<div class="bs-tool"><span class="bs-tool-ico">' + (face ? face.innerHTML : '') + '</span>' + tip.innerHTML + '</div>';
+wrap.classList.add('open');
+root.style.overflow = 'hidden';
+return;
+}
+const a = e.target.closest && e.target.closest('a.ft-btn');
+if (!a || !mq.matches) return;
+const card = a.querySelector('.ft-card');
+if (!card) return;
+e.preventDefault();
+body.innerHTML = card.innerHTML;
+wrap.classList.add('open');
+root.style.overflow = 'hidden';
+};
+document.addEventListener('click', onClick);
+this.respCleanup = () => {
+window.removeEventListener('resize', apply);
+document.removeEventListener('click', onClick);
+document.removeEventListener('keydown', onKey);
+if (ph) { ph.removeEventListener('touchstart', ts); ph.removeEventListener('touchend', te); }
+wrap.remove();
+};
+}
+
+// Switch language without a reload: soft cross-fade (View Transitions where supported),
+// and on the published site the address changes between / and /ru/
+setLang(l) {
+if (this.state.lang === l) return;
+try { localStorage.setItem('lang', l); } catch (e) {}
+const S = typeof window !== 'undefined' && window.__SITE;
+if (S) {
+const path = location.pathname.replace(/^\/ru(?=\/|$)/, '') || '/';
+// tracking links like /top show the home page: switching language goes to / or /ru/
+const url = S.any ? S.alt[l] : (l === 'ru' ? '/ru' : '') + path;
+if (url !== location.pathname) history.pushState({ lang: l }, '', url + location.search + location.hash);
+document.title = S.titles[l];
+}
+const apply = () => this.setState({ lang: l });
+const calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (document.startViewTransition && !calm) document.startViewTransition(() => { apply(); return new Promise(r => setTimeout(r, 30)); });
+else apply();
+}
+statusBar() {
+const ru = this.state.lang === 'ru';
+if (typeof document !== 'undefined') {
+document.documentElement.classList.toggle('en', !ru);
+document.documentElement.lang = ru ? 'ru' : 'en';
+}
+const d = new Date(this.state.now);
+const pad = (v) => (v < 10 ? '0' : '') + v;
+const hm = pad(d.getHours()) + ':' + pad(d.getMinutes());
+const daysRu = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+const monRu = ['янв.', 'февр.', 'мар.', 'апр.', 'мая', 'июн.', 'июл.', 'авг.', 'сент.', 'окт.', 'нояб.', 'дек.'];
+const daysEn = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const monEn = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const NB = '\u00a0';
+const clock = ru
+? daysRu[d.getDay()] + ',' + NB + d.getDate() + NB + monRu[d.getMonth()] + NB + hm
+: daysEn[d.getDay()] + NB + d.getDate() + NB + monEn[d.getMonth()] + NB + hm;
+const h = d.getHours();
+const greet = ru
+? (h >= 5 && h < 12 ? 'Доброе утро!' : h < 17 && h >= 12 ? 'Добрый день!' : h >= 17 && h < 23 ? 'Добрый вечер!' : 'Доброй ночи, вы' + NB + 'не' + NB + 'спите?')
+: (h >= 5 && h < 12 ? 'Good morning!' : h < 17 && h >= 12 ? 'Good afternoon!' : h >= 17 && h < 23 ? 'Good evening!' : 'Good night. Still up?');
+let mine = '';
+try {
+mine = new Intl.DateTimeFormat('ru-RU', { timeZone: 'Europe/Belgrade', hour: '2-digit', minute: '2-digit', hour12: false }).format(d);
+} catch (e) { mine = hm; }
+const batt = this.state.batt == null ? 100 : this.state.batt;
+// battery hint reacts to the visitor's real battery (or a playful default where the API is missing)
+let battHint;
+if (this.state.batt == null) battHint = ru ? 'Заряжен на' + NB + 'новые проекты' : 'Fully charged for new projects';
+else if (this.state.charging) battHint = ru ? 'Пока заряжается, можно посмотреть пару кейсов' : 'Charging? Perfect time for a couple of cases';
+else if (batt >= 80) battHint = ru ? 'Заряда хватит на' + NB + 'всё портфолио' : 'Enough charge for the whole portfolio';
+else if (batt >= 30) battHint = ru ? 'Заряда хватит, чтобы досмотреть до' + NB + 'конца' : 'Enough to scroll to the end';
+else battHint = ru ? 'Батарея садится, но' + NB + 'всё важное уже на' + NB + 'главной' : 'Battery’s low, but everything important is right here';
+return {
+t: ru
+? { lang: 'Язык', langAria: 'Язык сайта', wifi: 'Работаю удалённо из' + NB + 'Белграда' }
+: { lang: 'Lang', langAria: 'Site language', wifi: 'Working remotely from Belgrade' },
+langBadge: ru ? 'РУ' : 'EN',
+cvHref: ru ? 'https://docs.google.com/document/d/1C1IZlYzz1tL0Mf9m_cxdZPyUfV02FP1Gg9hhsa7BfzQ/edit?tab=t.0#heading=h.w6nop8rtqbyk' : 'https://docs.google.com/document/d/1TS9HV3ecjrl0lzUnDDgy5jc5VsHDw7kUU3lnsiE9G6s/edit?tab=t.0#heading=h.w6nop8rtqbyk',
+langName: ru ? 'Язык' : 'Language',
+clock: clock,
+greet: greet,
+myTime: mine === hm
+? (ru ? 'У' + NB + 'меня сейчас такое' + NB + 'же время' : 'Same time here for me')
+: (ru ? 'У' + NB + 'меня сейчас ' + mine : 'It’s ' + mine + ' here for me'),
+battText: batt + NB + '%',
+battHint: battHint,
+battW: Math.max(0.6, Math.round(13.13 * batt) / 100),
+
+isRu: ru ? 'true' : 'false',
+isEn: ru ? 'false' : 'true',
+ruCls: ru ? 'on' : '',
+enCls: ru ? '' : 'on',
+setRu: () => this.setLang('ru'),
+setEn: () => this.setLang('en')
+};
+}
+goTo(pos) {
+this.setState({ pos: pos });
+}
+wrap(v) {
+const n = this.photoList.length;
+return v - n * Math.round(v / n);
+}
+renderVals() {
+const list = this.photoList;
+const n = list.length;
+const W = this.W;
+const pos = this.state.pos;
+const active = ((pos % n) + n) % n;
+const x = pos;
+const ease = this.DURATION + 'ms cubic-bezier(0.22, 1, 0.36, 1)';
+// remember the position we are coming from, so a photo that jumps between the far slots moves instantly
+if (this._shownPos !== x) { this._fromPos = this._shownPos == null ? x : this._shownPos; this._shownPos = x; }
+const slot = (v) => { let q = ((v % n) + n) % n; return q === n - 1 ? -1 : q; };
+const slides = list.map((p, i) => {
+// slots in strict order: -1 = previous (left), 0 = current, 1..n-2 = next ones waiting on the right.
+// The photo that leaves on the left is parked straight on the far right (no transition),
+// so photos never fly back across the frame and always follow left-to-right order.
+const d = slot(i - x);
+const jumped = Math.abs(d - slot(i - this._fromPos)) > 1;
+const shown = d >= -1 && d <= 1 && !jumped;
+const tx = d >= 0 ? d * W : d * W * this.PARALLAX;
+const shade = d < 0 ? Math.min(-d, 1) * this.MAX_SHADE : 0;
+const still = !shown;
+return {
+src: p.src,
+alt: p.alt,
+tx: Math.round(tx * 100) / 100,
+z: Math.round((d + 3) * 10),
+vis: shown ? 'visible' : 'hidden',
+tr: still ? 'none' : 'transform ' + ease,
+trShade: still ? 'none' : 'opacity ' + ease,
+shade: Math.round(shade * 1000) / 1000,
+edge: d > 0.001 ? '-8px 0 24px rgba(0,0,0,0.25)' : 'none'
+};
+});
+const photos = list.map((p, i) => ({
+label: 'Фото ' + (i + 1) + ' из ' + n,
+dot: list[active].bg === 'dark'
+? (i === active ? '#fff' : 'rgba(255,255,255,0.45)')
+: (i === active ? '#000' : 'rgba(0,0,0,0.3)'),
+dotShadow: list[active].bg === 'dark' ? '0 0 2px rgba(0,0,0,0.35)' : '0 0 2px rgba(255,255,255,0.35)',
+pick: () => { this.goTo(pos + ((i - active) % n + n) % n); this.restartAuto(); }
+}));
+const sb = this.statusBar();
+return {
+...sb,
+slides: slides,
+photos: photos,
+// hover effects (slider controls, case labels, Polkadot drift, Nova cover lift) live in the <helmet> CSS
+ledgerSheets: this.ledgerSheets(),
+prev: () => { this.goTo(pos - 1); this.restartAuto(); },
+next: () => { this.goTo(pos + 1); this.restartAuto(); }
+};
+}
+}
+
+var app = document.getElementById('app');
+var comp = new Component({});
+function paint() {
+  handlers = [];
+  var html = tpl(TPL, comp.renderVals());
+  morphdom(app, '<div id="app">' + html + '</div>', {
+    onBeforeElUpdated: function (from, to) { if (from.getAttribute && from.getAttribute('style') && !to.hasAttribute('style')) to.setAttribute('style', from.getAttribute('style')); return !from.isEqualNode(to); }
+  });
+}
+var queued = false;
+function schedule() { if (queued) return; queued = true; Promise.resolve().then(function () { queued = false; paint(); }); }
+document.addEventListener('click', function (e) {
+  var el = e.target.closest && e.target.closest('[data-on]');
+  if (!el) return;
+  var f = handlers[+el.getAttribute('data-on')];
+  if (typeof f === 'function') f(e);
+});
+paint();
+if (comp.componentDidMount) comp.componentDidMount();
+// back/forward between /… and /ru/… switches the language in place
+window.addEventListener('popstate', function () {
+  var S = window.__SITE; if (!S) return;
+  var l = /^\/ru(\/|$)/.test(location.pathname) ? 'ru' : 'en';
+  if (comp.state.lang !== l) { comp.setState({ lang: l }); document.title = S.titles[l]; }
+});
+// internal links follow the language currently shown (it can change without a reload)
+document.addEventListener('click', function (e) {
+  var S = window.__SITE; if (!S) return;
+  var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+  var h = a.getAttribute('href'); var m = h.match(/^(?:\/ru)?(\/(?:staking\.html)?)(#.*)?$/); if (!m) return;
+  var want = (comp.state.lang === 'ru' ? '/ru' : '') + m[1] + (m[2] || '');
+  if (want !== h) { e.preventDefault(); location.href = want; }
+}, true);
+})();
+</script>
+</body>
+</html>

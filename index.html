@@ -435,7 +435,7 @@ function tpl(t, ctx) {
 }
 function DCLogic(props) { this.props = props || {}; }
 DCLogic.prototype.setState = function (o) { Object.assign(this.state, o); schedule(); };
-window.__SITE = {"lang":"en","alt":{"en":"/","ru":"/ru/"},"titles":{"en":"Andrey Balashov — Product Designer, open to new roles","ru":"Андрей Балашов — продуктовый дизайнер, открыт к предложениям"}};
+window.__SITE = {"lang":"en","alt":{"en":"/","ru":"/ru/"},"titles":{"en":"Andrey Balashov — Product Designer, open to new roles","ru":"Андрей Балашов — продуктовый дизайнер, открыт к предложениям"},"any":false};
 
 class Component extends DCLogic {
 constructor(props) {
@@ -745,7 +745,8 @@ try { localStorage.setItem('lang', l); } catch (e) {}
 const S = typeof window !== 'undefined' && window.__SITE;
 if (S) {
 const path = location.pathname.replace(/^\/ru(?=\/|$)/, '') || '/';
-const url = (l === 'ru' ? '/ru' : '') + path;
+// tracking links like /top show the home page: switching language goes to / or /ru/
+const url = S.any ? S.alt[l] : (l === 'ru' ? '/ru' : '') + path;
 if (url !== location.pathname) history.pushState({ lang: l }, '', url + location.search + location.hash);
 document.title = S.titles[l];
 }
